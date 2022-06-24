@@ -1,3 +1,47 @@
-.App {
-  background-color: aqua;
+
+
+:root {
+  --viña: #48795A;
+  --ligth-viña: #C4E1CF;
+  --tinto: #8D0808;
+  --bone: #EEEBDD;
+
 }
+
+.navbar {
+  background-color: #48795A ;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.header {
+  height: 100px;
+  background-color: var(--ligth-viña);
+  color: var(--tinto);
+  margin: 0;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active {
+  background-color: var(--tinto);
+  border-radius: 10px;  
+}
+
+.footer {
+  background-color: var(--viña);
+  color: var(--tinto);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

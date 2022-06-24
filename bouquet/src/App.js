@@ -1,10 +1,13 @@
+import "./App.css";
 
-import './App.css';
+import Router from "./components/Router";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hola proyecto!</h1>
+      <Router />
+      
+      
     </div>
   );
 }
