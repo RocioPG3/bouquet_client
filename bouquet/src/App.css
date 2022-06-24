@@ -44,4 +44,51 @@
   align-items: center;
 }
 
+/* estilos en el login*/
 
+.loginpage {
+  display: flex;
+  justify-content: center;
+}
+
+.loginform,
+.newaccount {
+  background-color: var(--diveboxbg);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.loginform h3,
+.newaccount h3 {
+  margin-top: 0px;
+}
+
+.loginform > form div {
+  margin-top: 25px;
+  margin-left: 10px;
+}
+
+.loginform input {
+  display: block;
+  border: solid 1px grey;
+  border-radius: 5px;
+  margin-top: 5px;
+  height: 25px;
+  width: 200px;
+}
+
+.loginform button,
+.newaccount button {
+  border: solid 1px grey;
+  border-radius: 5px;
+  font-size: large;
+  background-color: var(--ligth-viña);
+  color: var(--viña);
+  cursor: pointer;
+}
+
+.loginform button:hover,
+.newaccount button:hover {
+  background-color: var(--divelightgreen);
+} 
