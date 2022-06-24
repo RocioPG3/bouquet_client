@@ -4,10 +4,14 @@ import DenominationsPage from "../pages/DenominationsPage";
 import WineriesPage from "../pages/WineriesPage";
 import BookPage from "../pages/BookPage";
 import LoginPage from "../pages/LoginPage";
+import Footer from "./Footer";
 
 export default function Router() {
   return (
     <div>
+
+    <div className="pagecontainer">
+    <div className="contentwrap">
       <BrowserRouter>
         <nav className="navbar">
          
@@ -30,6 +34,10 @@ export default function Router() {
           <Route path="/Login" element={<LoginPage />} />
         </Routes>
       </BrowserRouter>
+      </div>
+      </div>
+
+      <Footer />
     </div>
   );
 }

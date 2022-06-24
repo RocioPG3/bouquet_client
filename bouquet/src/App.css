@@ -8,16 +8,39 @@
 
 }
 
+* {  box-sizing: border-box;
+
+}
+
+/* Fuente utilizada */
+
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .navbar {
   background-color: #48795A ;
   height: 40px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-left: 10px;
   padding-right: 10px;
+  
 }
 
+
+
+.navbar a {
+  color: var(--ligth-viña);
+  text-decoration: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+/* header estilos */
 
 .header {
   height: 100px;
@@ -34,6 +57,13 @@
   background-color: var(--tinto);
   border-radius: 10px;  
 }
+
+.contentwrap {
+ 
+  padding-bottom: 75px; 
+}
+
+/* estilos para el footer*/
 
 .footer {
   background-color: var(--viña);
@@ -92,3 +122,14 @@
 .newaccount button:hover {
   background-color: var(--divelightgreen);
 } 
+
+.newaccount {
+
+  
+  background-color: var(--tinto);
+  color: var(--bone);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+}

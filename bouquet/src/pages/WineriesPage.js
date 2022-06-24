@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from '../components/Footer'
+
 
 export default function WineriesPage() {
   return (
@@ -7,7 +7,7 @@ export default function WineriesPage() {
 
 <h2>Nuestras bodegas</h2>
 
- < Footer />
+ 
  
       
     </div>
