@@ -2,14 +2,24 @@
 
 :root {
   --viña: #48795A;
-  --ligth-viña: #C4E1CF;
+  --light-viña: #C4E1CF;
   --tinto: #8D0808;
   --bone: #EEEBDD;
+  --light-tinto:#A84439;
 
 }
 
 * {  box-sizing: border-box;
 
+}
+
+
+/*logo*/
+
+.logo{
+  height: 150px;
+  width: 150px;
+  margin-left: -30rem;
 }
 
 /* Fuente utilizada */
@@ -31,27 +41,48 @@ body {
 }
 
 
-
 .navbar a {
-  color: var(--ligth-viña);
+  color: var(--light-viña);
   text-decoration: none;
   margin-left: 5px;
   margin-right: 5px;
   padding: 5px;
 }
 
+
+
+a.navlink:hover{
+  background-color: var(--light-tinto);
+  border-radius: 10px;
+}
+
+
 /* header estilos */
 
 .header {
   height: 100px;
-  background-color: var(--ligth-viña);
+  background-color: var(--light-viña);
   color: var(--tinto);
   margin: 0;
   padding-left: 30px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items:center;
+  justify-content:space-evenly;
 }
+
+.textosheader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+  margin-left: -15rem;
+}
+
+.textosheader h2{
+  margin-right: 1rem;
+}
+
+
 
 .active {
   background-color: var(--tinto);
@@ -68,10 +99,15 @@ body {
 .footer {
   background-color: var(--viña);
   color: var(--tinto);
-  height: 50px;
-  display: flex;
+  height: 45px;
+  width:100%;
+  position:absolute;
+  bottom: 0;
+  text-align: center;
+  
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 /* estilos en el login*/
@@ -113,23 +149,62 @@ body {
   border: solid 1px grey;
   border-radius: 5px;
   font-size: large;
-  background-color: var(--ligth-viña);
+  background-color: var(--light-viña);
   color: var(--viña);
   cursor: pointer;
 }
 
-.loginform button:hover,
-.newaccount button:hover {
+.loginform button:hover{
   background-color: var(--divelightgreen);
 } 
 
+
+.newaccount button:hover {
+  background-color: var(--tinto);
+} 
 .newaccount {
 
   
-  background-color: var(--tinto);
-  color: var(--bone);
+  /* background-color: var(--light-tinto); */
+  color: var(--light-viña);
+  border: solid;
   border-radius: 10px;
+  border-color: var(--tinto);
   padding: 10px;
   margin: 10px;
   width: 250px;
+  height: 100px;
 }
+
+
+
+
+
+
+
+/*Media query para desktop*/
+
+/* @media only screen and (min-width: 1024px) {
+
+  .header {
+    height: 100px;
+    background-color: var(--ligth-viña);
+    color: var(--tinto);
+    margin: 0;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .active {
+    background-color: var(--tinto);
+    border-radius: 10px;  
+  }
+  
+  .contentwrap {
+   
+    padding-bottom: 75px; 
+  }
+
+} */

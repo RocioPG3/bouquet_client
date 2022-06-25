@@ -17,11 +17,11 @@ export default function Router() {
          
 
           <div className="navlinks">
-            <NavLink to="/" activeclassname="active">Home</NavLink>
-            <NavLink to="/Denominations" activeclassname="active">Denominaciones de Origen</NavLink>
-            <NavLink to="/Wineries" activeclassname="active">Nuestras bodegas</NavLink>
-            <NavLink to="/Book" activeclassname="active">Book now!</NavLink>
-            <NavLink to="/Login" activeclassname="active">Login</NavLink>
+            <NavLink to="/" className="navlink" activeclassname="active">Home</NavLink>
+            <NavLink to="/Denominations" className="navlink" activeclassname="active">Denominaciones de Origen</NavLink>
+            <NavLink to="/Wineries" className="navlink" activeclassname="active">Nuestras bodegas</NavLink>
+            <NavLink to="/Book" className="navlink" activeclassname="active">Book now!</NavLink>
+            <NavLink to="/Login" className="navlink" activeclassname="active">Login</NavLink>
           </div>
 
         </nav>
