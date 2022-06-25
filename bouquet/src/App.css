@@ -10,16 +10,18 @@
 }
 
 * {  box-sizing: border-box;
-
+  text-align: center;
+  font-size: 1rem;
 }
 
 
 /*logo*/
 
 .logo{
-  height: 150px;
-  width: 150px;
-  margin-left: -30rem;
+  height: 120px;
+  width: 120px;
+  margin-left: -35px ;
+
 }
 
 /* Fuente utilizada */
@@ -30,7 +32,8 @@ body {
 
 .navbar {
   background-color: #48795A ;
-  height: 40px;
+  height: 70px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,9 +47,10 @@ body {
 .navbar a {
   color: var(--light-viña);
   text-decoration: none;
-  margin-left: 5px;
-  margin-right: 5px;
-  padding: 5px;
+  font-size: 0.6rem;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 2px;
 }
 
 
@@ -61,6 +65,7 @@ a.navlink:hover{
 
 .header {
   height: 100px;
+  width: 100%;
   background-color: var(--light-viña);
   color: var(--tinto);
   margin: 0;
@@ -75,11 +80,14 @@ a.navlink:hover{
   flex-direction: row;
   align-items: center;
   justify-content:center;
-  margin-left: -15rem;
+  
 }
 
-.textosheader h2{
-  margin-right: 1rem;
+
+.textosheader p{
+  font-size:0.6rem ;
+  color: var(--tinto);
+  margin-left: -15px;
 }
 
 
@@ -94,20 +102,40 @@ a.navlink:hover{
   padding-bottom: 75px; 
 }
 
+/* estilos home*/
+
+.texthome h1 {
+color: var(--tinto);
+}
+
+.texthome p{
+  color:darkgrey;
+  font-size: 0.8rem;
+}
+
+.imagehome{
+  height: 50%;
+  width: 100%;
+  border-radius: 10px;
+  
+}
+
 /* estilos para el footer*/
 
 .footer {
   background-color: var(--viña);
-  color: var(--tinto);
+  color: var(--light-viña);
   height: 45px;
   width:100%;
   position:absolute;
-  bottom: 0;
-  text-align: center;
+  bottom:0px;
+ 
+    
+}
+
+.footer p{
+  font-size: 0.6rem;
   
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 /* estilos en el login*/
@@ -117,38 +145,48 @@ a.navlink:hover{
   justify-content: center;
 }
 
-.loginform,
-.newaccount {
+.loginform{
   background-color: var(--diveboxbg);
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
 }
+.labelform {
+font-size: 0.6rem;
+color: var(--tinto);
+}
 
-.loginform h3,
-.newaccount h3 {
+.loginform h3 {
+  color: var(--viña);
+  font-size: 0.8rem;
   margin-top: 0px;
 }
 
 .loginform > form div {
-  margin-top: 25px;
+  
+  margin-top: 15px;
   margin-left: 10px;
 }
 
 .loginform input {
-  display: block;
-  border: solid 1px grey;
-  border-radius: 5px;
-  margin-top: 5px;
-  height: 25px;
-  width: 200px;
+
+  display:block;
+  background: none;
+  border-width: 1px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  color: var(--light-tinto);
+  font-size: 10px;
+  width: 100%;
 }
 
 .loginform button,
 .newaccount button {
+  width: 80px;
   border: solid 1px grey;
   border-radius: 5px;
-  font-size: large;
+  font-size: 0.5rem;
   background-color: var(--light-viña);
   color: var(--viña);
   cursor: pointer;
@@ -160,13 +198,9 @@ a.navlink:hover{
 
 
 .newaccount button:hover {
-  background-color: var(--tinto);
+  background-color: var(--divelightgreen);
 } 
-.newaccount {
-
-  
-  /* background-color: var(--light-tinto); */
-  color: var(--light-viña);
+/* .newaccount {
   border: solid;
   border-radius: 10px;
   border-color: var(--tinto);
@@ -174,7 +208,7 @@ a.navlink:hover{
   margin: 10px;
   width: 250px;
   height: 100px;
-}
+} */
 
 
 

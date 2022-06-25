@@ -2,9 +2,10 @@ import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import IndexPage from "../pages/IndexPage";
 import DenominationsPage from "../pages/DenominationsPage";
 import WineriesPage from "../pages/WineriesPage";
-import BookPage from "../pages/BookPage";
+// import BookPage from "../pages/BookPage";
 import LoginPage from "../pages/LoginPage";
 import Footer from "./Footer";
+import Error from "./Error";
 
 export default function Router() {
   return (
@@ -18,10 +19,11 @@ export default function Router() {
 
           <div className="navlinks">
             <NavLink to="/" className="navlink" activeclassname="active">Home</NavLink>
-            <NavLink to="/Denominations" className="navlink" activeclassname="active">Denominaciones de Origen</NavLink>
+            <NavLink to="/Denominations" className="navlink" activeclassname="active">D.O.</NavLink>
             <NavLink to="/Wineries" className="navlink" activeclassname="active">Nuestras bodegas</NavLink>
-            <NavLink to="/Book" className="navlink" activeclassname="active">Book now!</NavLink>
+            {/* <NavLink to="/Book" className="navlink" activeclassname="active">Book now!</NavLink> */}
             <NavLink to="/Login" className="navlink" activeclassname="active">Login</NavLink>
+            
           </div>
 
         </nav>
@@ -30,8 +32,9 @@ export default function Router() {
           <Route path="/" element={<IndexPage />} />
           <Route path="/Denominations" element={<DenominationsPage />} />
           <Route path="/Wineries" element={<WineriesPage />} />
-          <Route path="/Book" element={<BookPage />} />
+          {/* <Route path="/Book" element={<BookPage />} /> */}
           <Route path="/Login" element={<LoginPage />} />
+          <Route element={<Error />} />
         </Routes>
       </BrowserRouter>
       </div>

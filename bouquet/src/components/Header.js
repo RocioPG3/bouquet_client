@@ -9,9 +9,10 @@ export default function Header() {
         alt="logo"
       />
       <div className="textosheader">
-      <h2>Bouquet</h2>
+      
 
-      <p>Una experiencia gourmet</p>
+      <p>Detrás de un buen vino...
+        hay una buena experiencia</p>
       </div>
     </div>
   );
