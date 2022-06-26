@@ -1,11 +1,11 @@
 import React from "react";
 import Footer from "./Footer";
-import Header from "./Header";
+
 
 export default function Index() {
   return (
     <div>
-      <Header />
+      
       <div className="texthome">
         <h1>¿Qué nos ofrece Bouquet?</h1>
         <p>

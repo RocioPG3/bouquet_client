@@ -4,12 +4,15 @@ import DenominationsPage from "../pages/DenominationsPage";
 import WineriesPage from "../pages/WineriesPage";
 // import BookPage from "../pages/BookPage";
 import LoginPage from "../pages/LoginPage";
+import Header from "./Header";
 import Footer from "./Footer";
 import Error from "./Error";
 
 export default function Router() {
   return (
     <div>
+
+    
 
     <div className="pagecontainer">
     <div className="contentwrap">
@@ -27,6 +30,7 @@ export default function Router() {
           </div>
 
         </nav>
+        <Header />
 
         <Routes>
           <Route path="/" element={<IndexPage />} />

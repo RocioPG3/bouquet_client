@@ -1,11 +1,20 @@
 import React from 'react'
-import Header from '../components/Header'
+import { Navigate, useNavigate } from 'react-router-dom'
 
 
 export default function DenominationsPage() {
+
+    const navigate = useNavigate();
+
+    function handleClick(e) {
+    navigate("/wineries")
+    }
+
+
+
   return (
     <div className='denominations'>
-      <Header />
+      
 
 <h1>¿Qué D.O te gustaría conocer?</h1>
 
@@ -59,7 +68,8 @@ export default function DenominationsPage() {
               </div>
 
    
-              <a className="buscadorBodegas" href="pages/WineriesPage.js">¿Qué vino te gustaría probar?</a>
+              
+              <button className='button' onClick={(e) => handleClick(e)}>Busca tu bodega</button>
     </div>
 
     </div>
