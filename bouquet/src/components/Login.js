@@ -10,7 +10,7 @@ export default function Login() {
   return (
     <div className="loginpage">
       <div className="loginform">
-        <h3>Are you ready?</h3>
+        <h3>¡Vamos allá!</h3>
         <form action="#" method="GET">
           <div>
             <label  className="labelform" htmlFor="userEmail">Email:</label>
@@ -28,7 +28,7 @@ export default function Login() {
           <div>
             <button type="submit">Sign In</button>
             <div className="newaccount">
-            <button onClick={handleForm}>Create an account</button>
+            <button onClick={handleForm}>Crea una nueva cuenta</button>
             </div>
           </div>
         </form>
