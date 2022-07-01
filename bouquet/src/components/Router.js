@@ -11,37 +11,80 @@ import Error from "./Error";
 export default function Router() {
   return (
     <div>
+      <div className="pagecontainer">
+        <div className="contentwrap">
+          <BrowserRouter>
+            <nav className="navbar">
+              <div className="navlinks">
+                <NavLink to="/" className="navlink" activeclassname="active">
+                  Home
+                </NavLink>
+                <NavLink
+                  to="/Denominations"
+                  className="navlink"
+                  activeclassname="active"
+                >
+                  D.O
+                </NavLink>
+                <NavLink
+                  to="/Wineries"
+                  className="navlink"
+                  activeclassname="active"
+                >
+                  Nuestras bodegas
+                </NavLink>
+                {/* <NavLink to="/Book" className="navlink" activeclassname="active">Book now!</NavLink> */}
+                <NavLink
+                  to="/Login"
+                  className="navlink"
+                  activeclassname="active"
+                >
+                  Login
+                </NavLink>
+              </div>
+            </nav>
+            <div class="dropdown">
+              <button class="dropbtn">Dropdown</button>
+              <div class="dropdown-content">
+                <NavLink to="/" className="navlink" activeclassname="active">
+                  Home
+                </NavLink>
+                <NavLink
+                  to="/Denominations"
+                  className="navlink"
+                  activeclassname="active"
+                >
+                  D.O
+                </NavLink>
+                <NavLink
+                  to="/Wineries"
+                  className="navlink"
+                  activeclassname="active"
+                >
+                  Nuestras bodegas
+                </NavLink>
+                {/* <NavLink to="/Book" className="navlink" activeclassname="active">Book now!</NavLink> */}
+                <NavLink
+                  to="/Login"
+                  className="navlink"
+                  activeclassname="active"
+                >
+                  Login
+                </NavLink>
+              </div>
+            </div>
+            <Header />
 
-    
-
-    <div className="pagecontainer">
-    <div className="contentwrap">
-      <BrowserRouter>
-        <nav className="navbar">
-         
-
-          <div className="navlinks">
-            <NavLink to="/" className="navlink" activeclassname="active">Home</NavLink>
-            <NavLink to="/Denominations" className="navlink" activeclassname="active">D.O</NavLink>
-            <NavLink to="/Wineries" className="navlink" activeclassname="active">Nuestras bodegas</NavLink>
-            {/* <NavLink to="/Book" className="navlink" activeclassname="active">Book now!</NavLink> */}
-            <NavLink to="/Login" className="navlink" activeclassname="active">Login</NavLink>
-            
-          </div>
-
-        </nav>
-        <Header />
-
-        <Routes>
-          <Route path="/" element={<IndexPage />} />
-          <Route path="/Denominations" element={<DenominationsPage />} />
-          <Route path="/Wineries" element={<WineriesPage />} />
-          {/* <Route path="/Book" element={<BookPage />} /> */}
-          <Route path="/Login" element={<LoginPage />} />
-          <Route element={<Error />} />
-        </Routes>
-      </BrowserRouter>
-      </div>
+            <Routes>
+              <Route path="/" element={<IndexPage />} />
+              <Route path="/Denominations" element={<DenominationsPage />} />
+              <Route path="/Wineries" element={<WineriesPage />} />
+              {/* <Route path="/Book" element={<BookPage />} /> */}
+              <Route path="/Login" element={<LoginPage />} />
+              <Route element={<Error />} />
+            </Routes>
+          </BrowserRouter>
+        </div>
       </div>
 
       <Footer />
