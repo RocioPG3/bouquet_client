@@ -1,9 +1,9 @@
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import IndexPage from "../pages/IndexPage";
 import DenominationsPage from "../pages/DenominationsPage";
 import WineriesPage from "../pages/WineriesPage";
-// import BookPage from "../pages/BookPage";
 import LoginPage from "../pages/LoginPage";
+import Navbar from "./navbar/Navbar";
 import Header from "./Header";
 import Footer from "./Footer";
 import Error from "./Error";
@@ -14,65 +14,9 @@ export default function Router() {
       <div className="pagecontainer">
         <div className="contentwrap">
           <BrowserRouter>
-            <nav className="navbar">
-              <div className="navlinks">
-                <NavLink to="/" className="navlink" activeclassname="active">
-                  Home
-                </NavLink>
-                <NavLink
-                  to="/Denominations"
-                  className="navlink"
-                  activeclassname="active"
-                >
-                  D.O
-                </NavLink>
-                <NavLink
-                  to="/Wineries"
-                  className="navlink"
-                  activeclassname="active"
-                >
-                  Nuestras bodegas
-                </NavLink>
-                {/* <NavLink to="/Book" className="navlink" activeclassname="active">Book now!</NavLink> */}
-                <NavLink
-                  to="/Login"
-                  className="navlink"
-                  activeclassname="active"
-                >
-                  Login
-                </NavLink>
-              </div>
-            </nav>
-            <div class="dropdown">
-              <button class="dropbtn">Dropdown</button>
-              <div class="dropdown-content">
-                <NavLink to="/" className="navlink" activeclassname="active">
-                  Home
-                </NavLink>
-                <NavLink
-                  to="/Denominations"
-                  className="navlink"
-                  activeclassname="active"
-                >
-                  D.O
-                </NavLink>
-                <NavLink
-                  to="/Wineries"
-                  className="navlink"
-                  activeclassname="active"
-                >
-                  Nuestras bodegas
-                </NavLink>
-                {/* <NavLink to="/Book" className="navlink" activeclassname="active">Book now!</NavLink> */}
-                <NavLink
-                  to="/Login"
-                  className="navlink"
-                  activeclassname="active"
-                >
-                  Login
-                </NavLink>
-              </div>
-            </div>
+
+            <Navbar />
+    
             <Header />
 
             <Routes>
