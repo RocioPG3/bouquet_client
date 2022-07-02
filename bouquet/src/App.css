@@ -325,10 +325,32 @@ color: var(--tinto);
  @media only screen and (min-width: 624px){
    .navbar {
      display:flex;
+     justify-content:center;
+     
+
 
    }
+
+   div .navlinks{
+     display: flex;
+     
+   }
+  
+   a.navlink {
+     margin-right: 3rem;
+   }
+
+  .navbar a {
+    color: var(--light-viña);
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 2px;
+  }
+
    .dropdown {
-     display:contents;
+     display:none;
    }
  }
 
