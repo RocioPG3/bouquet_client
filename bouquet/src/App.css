@@ -295,6 +295,67 @@ color: var(--tinto);
 } 
 
 
+/* estilos WineriesPage */
+
+.BrowserCardStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+
+.winerie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  margin: 5px;
+  color: var(--viña);
+  padding: 10px;
+  border-radius: 10px;
+  padding: 10px; 
+
+}
+
+.winerie h2{
+  font-size: 0.8rem;
+  margin: 2px;
+}
+.winerie h3{
+  font-size: 0.6rem;
+  margin: 2px;
+}
+.winerie p{
+  font-size: 0.5rem;
+  margin: 2px;
+}
+.winerie span{
+  font-size: 0.5rem;
+  margin-bottom: 10px;
+}
+
+.winerie img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.winerie button {
+  height: 40px;
+  width: 80px;
+  border: solid 1px grey;
+  border-radius: 5px;
+  font-size: 0.6rem;
+  background-color: var(--light-viña);
+  color: var(--viña);
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.winerie button:hover{
+  background-color: var(--divelightgreen);
+} 
+
+
  /* @media only screen and (min-width: 624px){
    .navbar {
      display:flex;

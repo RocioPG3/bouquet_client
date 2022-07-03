@@ -1,11 +1,12 @@
 import React from 'react'
 import { useState } from 'react';
 import { useEffect } from 'react';
-
 import Wineries from '../components/Wineries';
 
+import Ficha from '../components/Ficha';
 
-export default function WineriesPage() {
+
+export default function FichaPage() {
 
 const [ wineries, setWineries] = useState([]);
 
@@ -13,7 +14,7 @@ const URL ="http://demo5437727.mockable.io/wineries"
 
     useEffect(() => {
       fetch(URL)
-        .then(r => r.json())
+        .then(w => w.json())
         .then(data => setWineries(data));
 }, [URL])
 
@@ -23,17 +24,17 @@ const URL ="http://demo5437727.mockable.io/wineries"
 
     {wineries.map(wineries => {
       return (
-        <div>
+        
           <div className="BrowserCardStyle">
       
       <Wineries wineries={wineries} />
       
 
-      </div>
-        </div>)
+      </div> )
 
     
     })}
     </div>
   )
-  } 
+ 
+}
