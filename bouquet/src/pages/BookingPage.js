@@ -1,12 +1,12 @@
 import React from 'react'
+import Booking from '../components/Booking'
 
 
 
-
-export default function BookingPage() {
+export default function WineriesPage() {
   return (
-    <div>
-      
+    <div className='bookingPage'>
+      <Booking />
 
     
     </div>
