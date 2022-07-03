@@ -1,12 +1,14 @@
-import React from "react";
-import Navlinks from "./Navlinks";
+import MobileNavigation from "./MobileNavigation";
+import Navigation from "./Navigation";
+
 
 export default function Navbar() {
   return (
-    <div>
-      <nav className="navbar">
-        <Navlinks />
-      </nav>
+    <div className= "navbar">
+      <Navigation />
+      <MobileNavigation />
+
+   
     </div>
   );
 }

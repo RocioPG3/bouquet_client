@@ -1,28 +1,26 @@
 import { NavLink } from "react-router-dom";
-// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-// import {faBars} from '@fortawesome/free-solid-svg-icons'
-// import {useState} from 'react'
 
-export default function Navlinks() {
+
+export default function Navlinks(props) {
   
   return (
     <>
       <div className="navlinks">
-        <NavLink to="/" className="navlink" activeclassname="active">
+        <NavLink to="/" className="navlink" activeclassname="active" onClick={()=> props.isMobile && props.closeMobileMenu()}>
           Home
         </NavLink>
         <NavLink
           to="/Denominations"
           className="navlink"
-          activeclassname="active"
+          activeclassname="active" onClick={()=> props.isMobile && props.closeMobileMenu()}
         >
           D.O
         </NavLink>
-        <NavLink to="/Wineries" className="navlink" activeclassname="active">
+        <NavLink to="/Wineries" className="navlink" activeclassname="active" onClick={()=> props.isMobile && props.closeMobileMenu()}>
           Nuestras bodegas
         </NavLink>
 
-        <NavLink to="/Login" className="navlink" activeclassname="active">
+        <NavLink to="/Login" className="navlink" activeclassname="active" onClick={()=> props.isMobile && props.closeMobileMenu()}>
           Login
         </NavLink>
       </div>

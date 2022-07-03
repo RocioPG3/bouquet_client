@@ -4,7 +4,6 @@ import DenominationsPage from "../pages/DenominationsPage";
 import WineriesPage from "../pages/WineriesPage";
 import LoginPage from "../pages/LoginPage";
 import Navbar from "./navbar/Navbar";
-import MobileNavigation from "./navbar/MobileNavigation";
 import Header from "./Header";
 import Footer from "./Footer";
 import Error from "./Error";
@@ -17,7 +16,7 @@ export default function Router() {
           <BrowserRouter>
 
             <Navbar />
-            <MobileNavigation />
+            
     
             <Header />
 

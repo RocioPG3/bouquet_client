@@ -1,23 +1,24 @@
 
-import React from 'react'
 import Navlinks from './Navlinks';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faBars} from '@fortawesome/free-solid-svg-icons'
+import {faBars, faChampagneGlasses} from '@fortawesome/free-solid-svg-icons'
+import { faX } from '@fortawesome/free-solid-svg-icons';
 import {useState} from 'react'
 
 export default function MobileNavigation() {
     const [open, setOpen] = useState(false);
-
-  return (
-    <div>
-        <div class="dropdown">
-        <button class="dropbtn"> <FontAwesomeIcon icon={faBars} onClick={() => setOpen(!open)}/></button>
-        {open && <Navlinks/>}
-        <div class="dropdown-content"></div>
-        </div>
-    </div>
+    const hamburgerIcon= <FontAwesomeIcon icon={faBars} onClick={() => setOpen(!open)}/>
+    const closeIcon= <FontAwesomeIcon icon={faX} onClick={() => setOpen(!open)}/>
+    const closeMobileMenu = () => setOpen(false);
+    return (
+    <nav className="MobileNavigation">
+        
+        {open ? closeIcon : hamburgerIcon}
+        {open && <Navlinks isMobile={true} closeMobileMenu={closeMobileMenu}/>}
+       
+        </nav>
 
 
     
-  )
+  );
 }
