@@ -6,6 +6,7 @@
   --tinto: #8D0808;
   --bone: #EEEBDD;
   --light-tinto:#A84439;
+  --viña2:#2d4937;
 
 }
 
@@ -37,6 +38,7 @@ body {
   height: 70px;
   width: 100%;
   display:flex;
+
   align-items: center;
   justify-content:left;
   padding-left: 10px;
@@ -48,23 +50,23 @@ div .navlinks{
   display:flex;
   flex-direction: column;
   position:absolute;
-  top: 30px;
-  right:0;
+  top: 40px;
+  right:-200%;
+  
   /* width: 100%; */
   background-color: var(--tinto);
+  opacity:var(--tinto) ;
   border-top: 2px solid var(--viña);
   
-
-
 }
-
 
 .navbar a {
   color: var(--light-viña);
   text-decoration: none;
-  font-size: 0.6rem;
-  margin-left: 3px;
-  margin-right: 3px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 20px;
   padding: 2px;
 }
 
@@ -361,36 +363,6 @@ color: var(--tinto);
 } 
 
 
- /* @media only screen and (min-width: 624px){
-   .navbar {
-     display:flex;
-     justify-content:center;
-     
-
-
-   }
-
-   div .navlinks{
-     display: flex;
-     
-   }
-  
-   a.navlink {
-     margin-right: 3rem;
-   }
-
-  .navbar a {
-    color: var(--light-viña);
-    text-decoration: none;
-    font-size: 1rem;
-    margin-left: 3px;
-    margin-right: 3px;
-    padding: 2px;
-  }
-
- } */
-
-
 /*Media query para desktop*/
 
 @media only screen and (min-width: 1024px) {
@@ -404,29 +376,45 @@ color: var(--tinto);
   display:flex;
 }
 
+.navbar {
+  display:flex;
+  justify-content: center ;
+}
+
 div .navlinks {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
-  background-color: none;
+  position:unset;
+  background-color: var(--viña)
+}
+
+div .navlinks a {
+  font-weight: bold;
+  font-size: 1rem;
 }
 a.navlink:hover{
-  
-  color: var(--viña);
-  
+  border-bottom:var(--light-tinto);
+  color: var(--light-tinto);
  
+}
+
+.active {
+  background-color: var(--viña2);
+  border-radius: 10px;  
 }
   
   .header {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
     height: 100px;
-    background-color: var(--ligth-viña);
+    background-color: var(--light-viña);
     color: var(--tinto);
     margin: 0;
     padding-left: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
   }
 
   .textosheader {
@@ -438,19 +426,22 @@ a.navlink:hover{
     
   }
   
-  
   .textosheader p{
-    font-size:0.6rem ;
+    font-size:0.8rem ;
     color: var(--tinto);
     margin-left: -15px;
     
   }
   
-  .active {
-    background-color: var(--tinto);
-    border-radius: 10px;  
-  }
-  
+  /*logo*/
+
+.logo{
+  height: 160px;
+  width: 160px;
+  margin-left: -140px ;
+
+}
+
   .contentwrap {
    
     padding-bottom: 75px; 

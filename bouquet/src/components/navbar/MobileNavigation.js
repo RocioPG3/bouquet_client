@@ -12,7 +12,7 @@ export default function MobileNavigation() {
     const closeMobileMenu = () => setOpen(false);
     return (
     <nav className="MobileNavigation">
-        
+       
         {open ? closeIcon : hamburgerIcon}
         {open && <Navlinks isMobile={true} closeMobileMenu={closeMobileMenu}/>}
        
