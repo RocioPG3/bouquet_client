@@ -10,11 +10,11 @@ export default function FichaPage() {
 
 const [ wineries, setWineries] = useState([]);
 
-const URL ="http://demo5437727.mockable.io/wineries"
+const URL ="https://run.mocky.io/v3/59c7abee-36b5-4e59-b96a-6573480f5df9"
 
     useEffect(() => {
       fetch(URL)
-        .then(w => w.json())
+        .then(r => r.json())
         .then(data => setWineries(data));
 }, [URL])
 
