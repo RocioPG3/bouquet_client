@@ -14,9 +14,9 @@ export default function Reservas() {
             <form action="#" method="POST">
 
                 <label htmlFor="contactRoute">Bodega:</label>
-                <input type="text" name="contactRoute" id="contactRoute" required placeholder="Indique el nombre de la ruta deseada" />
+                <input type="text" name="contactRoute" id="contactRoute" required placeholder="Introduzca el nombre de la bodega" />
 
-                <label htmlFor="contactDate">Fecha en la quieres ir:</label>
+                <label htmlFor="contactDate">Fecha visita:</label>
                 <input type="date" name="contactDate" id="contactDate" required />
 
                 <label htmlFor="contactName">Nombre:</label>
@@ -26,10 +26,10 @@ export default function Reservas() {
                 <input type="text" name="contactLastname" id="contactLastname" required placeholder="Introduzca su(s) apellido(s)" />
 
                 <label htmlFor="contactEmail">Email:</label>
-                <input type="email" name="contactEmail" id="contactEmail" required placeholder="Ej: nombre@gmail.com" />
+                <input type="email" name="contactEmail" id="contactEmail" required placeholder="Ej: name@gmail.com" />
 
                 <label htmlFor="contactMessage">Mensaje:</label>
-                <textarea name="contactMessage" id="contactMessage" placeholder="Si desea hacer alguna aclaración o comentario, por favor indíquelo aquí. En cuanto recibamos su solicitud y comprobemos la disponibilidad para la ruta y fechas seleccionadas, nos pondremos en contacto con usted."></textarea>
+                <textarea name="contactMessage" id="contactMessage" placeholder="Escríbenos cualquier consulta que nos quieras hacer, te contactaremos lo antes posible."></textarea>
 
                 <button className="button" type="submit">Enviar</button>
             </form>

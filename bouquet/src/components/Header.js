@@ -3,17 +3,9 @@ import React from "react";
 export default function Header() {
   return (
     <div className="header">
-      <img
-        className="logo"
-        src={process.env.PUBLIC_URL + "/logoweb.png"}
-        alt="logo"
-      />
-      <div className="textosheader">
+      {/* <img src="https://img.freepik.com/fotos-premium/bodegas-filas-vides-uva-tomadas-dia-brillante-soleado_100800-1983.jpg?w=1380" alt="" 
+                 /> */}
       
-
-      <p>Detrás de un buen vino...
-        hay una buena experiencia</p>
-      </div>
     </div>
   );
 }

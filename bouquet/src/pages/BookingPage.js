@@ -3,7 +3,7 @@ import Booking from '../components/Booking'
 
 
 
-export default function WineriesPage() {
+export default function BookingWineries() {
   return (
     <div className='bookingPage'>
       <Booking />
