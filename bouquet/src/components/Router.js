@@ -6,7 +6,7 @@ import FichaPage from "../pages/FichaPage";
 import LoginPage from "../pages/LoginPage";
 import BookingPage from "../pages/BookingPage";
 import Navbar from "./navbar/Navbar";
-import Header from "./Header";
+// import Header from "./Header";
 import Footer from "./Footer";
 import Error from "./Error";
 
@@ -21,13 +21,13 @@ export default function Router() {
             <Navbar />
             
     
-            <Header />
+            {/* <Header /> */}
 
             <Routes>
               <Route path="/" element={<IndexPage />} />
               <Route path="/Denominations" element={<DenominationsPage />} />
               <Route path="/Wineries" element={<WineriesPage />} />
-              <Route path="/Ficha" element={<FichaPage />} />
+              <Route path="/Ficha/:id" element={<FichaPage />} />
               <Route path="/Login" element={<LoginPage />} />
               <Route path="/Booking" element={<BookingPage />} />
               <Route element={<Error />} />

@@ -5,8 +5,8 @@ export default function Wineries({wineries}) {
 
 const navigate = useNavigate();
 
-function handleClick(e) {
-  navigate("/ficha")
+function handleClick(id) {
+  navigate("/ficha/${id}")
 }
 
   return (
@@ -16,7 +16,7 @@ function handleClick(e) {
         <p>{wineries.location}</p>
         <span>{wineries.telephone}</span>
         <img src={wineries.image} alt="" />
-        <button onClick={(e) => handleClick(e)}>Quiero saber más</button>
+        <button onClick={(e) => handleClick(wineries.id)}>Quiero saber más</button>
 
     </div>
   )

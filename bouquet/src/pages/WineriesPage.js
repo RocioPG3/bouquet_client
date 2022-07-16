@@ -19,7 +19,7 @@ const URL ="https://run.mocky.io/v3/59c7abee-36b5-4e59-b96a-6573480f5df9"
 
       
   return (
-    <div>
+    <div className='gridWineries'>
 
     {wineries.map(wineries => {
       return (
