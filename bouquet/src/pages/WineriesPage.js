@@ -1,5 +1,7 @@
-import React from 'react'
-import { useState, useEffect} from 'react';
+
+import React, { useContext } from 'react';
+import { useEffect } from 'react';
+import { GlobalContext } from '../App';
 
 
 import Wineries from '../components/Wineries';
@@ -7,7 +9,7 @@ import Wineries from '../components/Wineries';
 
 export default function WineriesPage() {
 
-const [ wineries, setWineries] = useState([]);
+const { wineries, setWineries } = useContext(GlobalContext);
 
 const URL ="https://run.mocky.io/v3/59c7abee-36b5-4e59-b96a-6573480f5df9"
 
@@ -15,7 +17,7 @@ const URL ="https://run.mocky.io/v3/59c7abee-36b5-4e59-b96a-6573480f5df9"
       fetch(URL)
         .then(r => r.json())
         .then(data => setWineries(data));
-}, [URL])
+}, [wineries, URL, setWineries])
 
       
   return (
