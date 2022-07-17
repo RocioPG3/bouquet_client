@@ -42,6 +42,9 @@ body {
   justify-content:left;
   padding-left: 10px;
   padding-right: 10px;
+  top: 0;
+  position: fixed;
+  z-index: 5;
   
 }
 
@@ -451,7 +454,7 @@ color: var(--tinto);
   width: 50vh;
   margin: 1.5rem;
   margin-left:3rem;
-  border-radius: 30%; 
+  border-radius: 20%; 
 
 }
 
