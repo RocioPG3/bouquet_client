@@ -9,12 +9,12 @@ import img5 from "../img/img5.jpg";
 export const Carousel = () => {
 
   return (
-    <div class="pic-container">
-    <img src={img1} alt="" class="pic"/>
-    <img src={img2} alt="" class="pic"/>
-    <img src={img3} alt="" class="pic"/>
-    <img src={img4} alt="" class="pic"/>
-    <img src={img5} alt="" class="pic"/>
+    <div className="pic-container">
+    <img src={img1} alt="" className="pic"/>
+    <img src={img2} alt="" className="pic"/>
+    <img src={img3} alt="" className="pic"/>
+    <img src={img4} alt="" className="pic"/>
+    <img src={img5} alt="" className="pic"/>
    
   </div>
   );

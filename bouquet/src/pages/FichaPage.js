@@ -11,7 +11,7 @@ export default function FichaPage() {
 const [ wineries, idWineries] = useContext(GlobalContext);
 //const [ficha, setFicha] = useState({});
 
-const ficha = wineries.filter((winerie) => winerie.id === idWinerie);
+const ficha = wineries.filter((winerie) => winerie.id === idWineries);
     // setFicha(fichaFiltrada);
 
 // const URL ="https://run.mocky.io/v3/59c7abee-36b5-4e59-b96a-6573480f5df9"

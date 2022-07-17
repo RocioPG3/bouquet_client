@@ -24,8 +24,10 @@ const URL ="https://run.mocky.io/v3/59c7abee-36b5-4e59-b96a-6573480f5df9"
     <div className='gridWineries'>
 
     {wineries.map(wineries => {
+    
       return (
-        <div>
+        <div key={wineries.id}>
+            
           <div className="BrowserCardStyle">
       
       <Wineries wineries={wineries} />
