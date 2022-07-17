@@ -1,16 +1,19 @@
 import React from "react";
-import Footer from "./Footer";
+import { Carousel } from "../components/Carousel";
 
 
 export default function Index() {
   return (
+  
     <div className="containerhome">
+
+      <Carousel/>
       
       <div className="texthome">
         <h1>¿Qué nos ofrece Bouquet?</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum eos
-          sed aut, eligendi excepturi, deleniti, nemo laboriosam tenetur que
+          Bouquet es tu portal para descubrir de una manera diferente y divertida las bodegas más bonitas de España.
+          Aquí podrás encontrar las mejores actividades que nos ofrece cada bodega.Disfruta de las experiencias que te ofrecemos diseñadas pensando en ti.
         </p>
         {/* <img
           className="imagehome"
@@ -23,7 +26,7 @@ export default function Index() {
       <img src="https://vinosdo.wine/assets/uploads/2018/04/ribera-guadiana-1.jpg" alt="" />
 
         <div className="containerText1">
-          <h2>Lorem ipsum, dolor sit amet consectetur </h2>
+          <h2>Nuestra misión </h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus iste magni ipsa, vel asperiores illum doloremque quidem reiciendis dolor eveniet! Sunt nisi porro maxime dolor unde voluptas debitis pariatur placeat!</p>
         </div>
         
@@ -31,7 +34,7 @@ export default function Index() {
       <div className="container2">
           <img src="https://www.asajacr.com/wp-content/uploads/2019/06/purple-grapes-553464_1280.jpg" alt="" />
           <div className="containerText2">
-          <h2>Lorem ipsum, dolor sit amet consectetur</h2>
+          <h2>Nuestra historia</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus iste magni ipsa, vel asperiores illum doloremque quidem reiciendis dolor eveniet! Sunt nisi porro maxime dolor unde voluptas debitis pariatur placeat!</p>
           </div>
         
@@ -48,7 +51,7 @@ export default function Index() {
       </div>
 
 
-      <Footer />
+      
     </div>
   );
 }

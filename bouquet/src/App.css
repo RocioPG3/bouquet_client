@@ -38,7 +38,6 @@ body {
   height: 70px;
   width: 100%;
   display:flex;
-
   align-items: center;
   justify-content:left;
   padding-left: 10px;
@@ -54,7 +53,7 @@ div .navlinks{
   right:-200%;
   
   /* width: 100%; */
-  background-color: var(--tinto);
+  background-color: var(--light-tinto);
   opacity:var(--tinto) ;
   border-top: 2px solid var(--viña);
   
@@ -85,9 +84,15 @@ a.navlink:hover{
   cursor: pointer;
   position: absolute;
   right: 5%;
-  /* opacity: 80%; */
+  z-index: 4;
+ 
+  
 }
 
+.active {
+  background-color: var(--tinto);
+  border-radius: 10px;  
+}
 
 
 .navigation {
@@ -97,9 +102,9 @@ a.navlink:hover{
 
 
 
-/* estilos header  */
+/*estilos header*/
 
-/* .header {
+ /* .header {
   height: 50px;
   width: 100%;
   color: var(--tinto);
@@ -123,15 +128,10 @@ a.navlink:hover{
 .textosheader {
   display:none;
     
-}
+} */
 
 
-.active {
-  background-color: var(--tinto);
-  border-radius: 10px;  
-}
-
-.contentwrap {
+ /* .contentwrap {
  
   padding-bottom: 75px; 
 } */
@@ -146,7 +146,7 @@ a.navlink:hover{
 
 .texthome h1 {
 color: var(--tinto);
-margin-top: 100px;
+margin-top: 50px;
 }
 
 .texthome p{
@@ -178,7 +178,7 @@ margin-top: 100px;
 }
 
 .containerText1 h2 {
-  display: flex;
+  
   font-size: 15px;
   text-align: left;
   margin-left: 20px;
@@ -218,9 +218,9 @@ margin-top: 100px;
 }
 
 .containerText2 h2 {
-  display: flex;
+
   font-size: 15px;
-  text-align: right;
+  text-align:right;
   margin-right: 20px;
   
 }
@@ -258,7 +258,7 @@ margin-top: 100px;
 }
 
 .containerText3 h2 {
-  display: flex;
+  
   font-size: 15px;
   text-align: left;
   margin-left: 20px;
@@ -287,21 +287,42 @@ margin-top: 100px;
 /*--------- estilos para el footer---------*/
 
 .footer {
+  display: flex;
+  flex-direction: column;
   background-color: var(--viña);
   color: var(--light-viña);
-  height: 45px;
+  height: 25%;
   width:100%;
-  position:fixed;
+  /* position:fixed; */
   bottom:0px;
-  
+  padding: 1rem 0 1rem 0;
+  background-position: center center;
+  background-size: cover;
+  min-height:10vh;
  
     
 }
 
+
 .footer p{
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   
 }
+
+.footer a{
+  color: white;
+  text-decoration: none;
+  font-size: 0.5rem;
+}
+.elementFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items:center;
+ 
+}
+
+
 
 /*-------- estilos en el login------------*/
 
@@ -345,15 +366,6 @@ color: var(--tinto);
 
 .loginform input {
 
-  /* display:block;
-  background: none;
-  border-width: 1px;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  color: var(--light-tinto);
-  font-size: 10px;
-  width: 100%; */
   display: block;
   padding: 15px 10px;
   margin-bottom: 10px;
@@ -452,7 +464,7 @@ color: var(--tinto);
 .imageText p{
   margin-left: 0.8rem;
   font-size: 10px;
-  color: darkgrey;
+  color:var(--viña2);
 
   
 }
@@ -467,20 +479,21 @@ color: var(--tinto);
  }
 
  .heading button{
-  height: 40px;
+ 
   width: 80px;
+  height: 25px;
   border: solid 1px grey;
   border-radius: 5px;
-  font-size: 0.6rem;
-  background-color: var(--light-viña);
-  color: var(--viña);
+  font-size: 0.5rem;
+  background-color: var(--viña);
+  color: var(--bone);
   cursor: pointer;
-  margin-top: 10px;
+  margin-bottom: 10px; 
  }
 
  .heading button:hover{
-  background-color:var(--viña);
-      color: var(--bone);
+  background-color: var(--light-viña);
+  color: var(--viña);
 } 
 
 
