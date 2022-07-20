@@ -348,6 +348,7 @@ margin-top: 50px;
   padding:10px 20px 20px 20px ;
   /* position: absolute; */
   margin: 10px;
+  margin-top: 25px;
 }
 .labelform {
 font-size: 0.6rem;
@@ -524,12 +525,13 @@ color: var(--tinto);
   border-radius: 10px;
   padding: 10px; 
   width: 80vw;
+  margin-top: 25px;
 
 }
 
 .winerie h2{
   font-size: 0.8rem;
-  margin: 2px;
+  
 }
 .winerie h3{
   font-size: 0.6rem;
@@ -674,36 +676,7 @@ a.navlink:hover{
   border-radius: 10px;  
 }
   
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content:space-evenly;
-    height: 100px;
-    width: 100%;
-    color: var(--tinto);
-    margin: 0;
-    padding-left: 30px;
-    
-  }
-
-  .textosheader {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:flex-start;
-    
-    
-  }
   
-  .textosheader p{
-    font-size:0.8rem ;
-    color: var(--tinto);
-    margin-left: -15px;
-    
-  }
-
-
-
   
   /*logo*/
 
@@ -718,5 +691,516 @@ a.navlink:hover{
    
     padding-bottom: 75px; 
   }
+
+
+  /*-------- estilos home-----------*/
+
+
+
+.texthome{
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.texthome h1 {
+  color: var(--tinto);
+  margin-top: 50px;
+  font-size:x-large;
+  }
+  
+  .texthome p{
+    color: var(--viña2);
+    font-size: 0.8rem;
+    text-align:center;
+    width: 60%;
+    margin-left: 180px ;
+  
+  }
+  
+  
+  .container1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    background-color: var(--light-tinto);
+    margin-right: auto;
+    border-radius: 5px;
+    
+  }
+
+  .containerText1{
+    display:flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  
+  
+  .containerText1 h2 {
+    
+    font-size: 15px;
+    text-align: left;
+    margin-left: 20px;
+  }
+  
+  .containerText1 p {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 10px;
+    
+  }
+  
+  .container1 img{
+    display: flex;
+    height: 50%;
+    width: 90%;
+    border-radius: 10px;
+    
+   
+  }
+  
+  .container2 {
+    display: flex;
+    flex-direction:row-reverse;
+    background-color: var(--light-viña);
+    width: 80%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 5px;
+    margin: 10px;
+    margin-left: auto;
+    
+  }
+  
+  .containerText2{
+    display:flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  
+  
+  .containerText2 h2 {
+  
+    font-size: 15px;
+    text-align:right;
+    margin-right: 20px;
+    
+  }
+  
+  .containerText2 p {
+   
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 10px;
+  }
+  
+  .container2 img{
+    display: flex;
+    margin-right: 25px;
+    height: 50%;
+    width: 80%;
+    border-radius: 10px
+  }
+  .container3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    background-color: var(--light-tinto);
+    margin-right: auto;
+    border-radius: 5px;
+    
+    
+  }
+
+  .containerText3{
+    display:flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  
+  .containerText3 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .containerText3 h2 {
+    
+    font-size: 15px;
+    text-align: left;
+    margin-left: 20px;
+  }
+  
+  .containerText3 p {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 10px;
+  }
+  
+  .container3 img{
+    display: flex;
+    margin-left: 25px;
+    height: 50%;
+    width: 80%;
+    border-radius: 10px;
+    
+   
+  }
+  
+  
+  
+  /*--------- estilos para el footer---------*/
+  
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    background-color: var(--viña);
+    color: var(--light-viña);
+    height: 15%;
+    width:100%;
+    bottom:0px;
+    min-height:10vh;
+   
+      
+  }
+  
+  
+  .footer p{
+    
+    margin-right: 25px;
+    font-size: 0.5rem;
+    
+  }
+  
+  .footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.5rem;
+  }
+  .elementFooter {
+    align-items:center;
+    margin-left: 25px;
+    top:0;
+
+    
+  } 
+  
+  
+  
+  /*-------- estilos en el login------------*/
+  
+  .loginpage {
+    display: flex;
+    justify-content: center;
+    background-image: url("https://static2.diariosur.es/www/multimedia/202106/18/media/cortadas/1-k20D-U140754340573k6B-1968x1216@Diario%20Sur.jpg");
+    width: 100%;
+    min-height: 100%;
+    padding: 10px;
+    margin-top: 50px;
+    /* opacity: 60%; */
+    
+  
+  }
+  
+  .loginform{
+    background-color:var(--bone);
+    border-radius: 2px 2px 5px 5px;;
+    padding:10px 20px 20px 20px ;
+    /* position: absolute; */
+    margin: 10px;
+    margin-top: 25px;
+  }
+  .labelform {
+  font-size: 0.6rem;
+  color: var(--tinto);
+  
+  }
+  
+  .loginform h3 {
+    color: var(--viña2);
+    font-size: 0.8rem;
+    margin-top: 0px;
+  }
+  
+  .loginform > form div {
+    
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  
+  .loginform input {
+  
+    display: block;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 10px;
+    border: 1px solid #ddd;
+    transition: border-width 0.2s ease;
+    border-radius: 2px;
+    color:var(--viña2);
+  
+  }
+  
+  .newaccount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    background-color: var(--black);
+    color: white;
+    border-radius: 10px;
+    height: 50px;
+  
+  }
+  
+  .loginform button,
+  .newaccount button {
+    width: 80px;
+    height: 25px;
+    border: solid 1px grey;
+    border-radius: 5px;
+    font-size: 0.5rem;
+    background-color: var(--viña);
+    color: var(--bone);
+    cursor: pointer;
+    
+  }
+  
+  .newaccount button {
+    margin-left: -10px;
+  }
+  
+  .loginform button:hover{
+    background-color: var(--light-viña);
+    color: var(--viña);
+  } 
+  
+  
+  .newaccount button:hover {
+    background-color: var(--light-viña);
+    color: var(--viña);
+  } 
+  
+  
+  /*--------- estilos DenominationsPage-----------*/
+  
+  .denominations h1{
+    color: var(--tinto);
+    margin-top: 50px;
+    
+    
+  }
+  
+  .divImages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .imageText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 70%;
+    
+    
+  }
+  
+  .imageDO {
+    height: 40vh;
+    width: 50vh;
+    margin: 1.5rem;
+    margin-left:3rem;
+    border-radius: 20%; 
+  
+  }
+  
+  .imageText h2{
+    color: var(--tinto);
+    font-size:small;
+    font-weight: bold;
+  }
+  
+  .imageText p{
+    margin-left: 0.8rem;
+    font-size: 10px;
+    color:var(--viña2);
+  
+    
+  }
+  
+  .heading .buscadorBodegas {
+  
+    color: var(--viña);
+    
+    font-size: 0.8rem;
+    text-decoration: none;
+   
+   }
+  
+   .heading button{
+   
+    width: 80px;
+    height: 25px;
+    border: solid 1px grey;
+    border-radius: 5px;
+    font-size: 0.5rem;
+    background-color: var(--viña);
+    color: var(--bone);
+    cursor: pointer;
+    margin-bottom: 10px; 
+   }
+  
+   .heading button:hover{
+    background-color: var(--light-viña);
+    color: var(--viña);
+  } 
+  
+  
+  /*-------------estilos WineriesPage-----------*/
+  
+  .BrowserCardStyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    margin-top: 50px;
+  }
+  
+  
+  
+  
+  .winerie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    margin: 5px;
+    color: var(--viña);
+    padding: 10px;
+    border-radius: 10px;
+    padding: 10px; 
+    width: 80vw;
+    margin-top: 25px;
+  
+  }
+  
+  .winerie h2{
+    font-size: 0.8rem;
+    
+  }
+  .winerie h3{
+    font-size: 0.6rem;
+    margin: 2px;
+  }
+  .winerie p{
+    font-size: 0.5rem;
+    margin: 2px;
+  }
+  .winerie span{
+    font-size: 0.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .winerie img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .winerie button {
+    height: 40px;
+    width: 80px;
+    border: solid 1px grey;
+    border-radius: 5px;
+    font-size: 0.6rem;
+    background-color: var(--light-viña);
+    color: var(--viña);
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .winerie button:hover{
+    background-color:var(--viña);
+    color: var(--bone);
+  } 
+  
+  /*----------Estilos BookingPage----------*/
+  
+  
+  /* .bookings{
+    display: flex;
+    flex-direction: column;
+    
+  } */
+  .bookings form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    width: fit-content;
+    margin: auto;
+    background-color: var(--light-viña);
+    color: var(--black);
+    padding: 10px;
+    border-radius: 10px;
+    padding: 10px; 
+    -webkit-box-shadow: 2px 2px 5px #999;
+    -moz-box-shadow: 2px 2px 5px #999;
+    filter: shadow(color=#999999, direction=135, strength=2);
+  }
+  
+  .bookings label{
+    font-size: 0.6rem;
+  }
+  
+  .bookings form input {
+    width: 30vw;
+    height: 2rem;
+    font-size:0.6rem;
+    margin-block: 1rem;
+    border-radius: 5px;
+  }
+  
+  .bookings form textarea {
+    width: 60vw;
+    height: 6rem;
+    font-size:0.6rem;
+    margin-block: 1rem;
+    border-radius: 5px;
+  }
+  
+  .bookings button {
+   
+    height: 40px;
+    width: 80px;
+    border: solid 1px grey;
+    border-radius: 5px;
+    font-size: 0.6rem;
+    background-color: var(--light-viña);
+    color: var(--viña2);
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .bookings button:hover {
+    background-color: var(--viña);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

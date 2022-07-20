@@ -27,7 +27,7 @@ export default function Index() {
 
         <div className="containerText1">
           <h2>Nuestra misión </h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus iste magni ipsa, vel asperiores illum doloremque quidem reiciendis dolor eveniet! Sunt nisi porro maxime dolor unde voluptas debitis pariatur placeat!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sunt odio explicabo dolorum sit ut quaerat consequatur rem corrupti quod expedita aspernatur libero necessitatibus eius aut autem dolore praesentium architecto, quia illo! Sequi perferendis debitis in et culpa est aspernatur quasi eaque, enim, officia deserunt, quae corrupti! Suscipit enim quaerat at molestiae perferendis eligendi debitis et sunt? Repellat, tempora laborum. Ducimus nihil laudantium saepe quibusdam quo repellendus eveniet rem animi ipsum atque, minus provident a illo cupiditate ea inventore nesciunt molestias vero dolorum. Ad debitis velit ducimus cumque, est nihil maxime vel in repellendus iusto quas sit incidunt necessitatibus dolores?</p>
         </div>
         
       </div>
