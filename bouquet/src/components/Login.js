@@ -10,8 +10,10 @@ export default function Login() {
   return (
     <div className="loginpage">
       <div className="loginform">
+
+        <div className="cardImage"></div>
         <h3>¡Vamos allá!</h3>
-        <form action="#" method="GET">
+        <form className="loginCard" action="#" method="GET">
           <div>
             <label  className="labelform" htmlFor="userEmail">Email:</label>
             <input type="email" name="userEmail" id="userEmail" required />

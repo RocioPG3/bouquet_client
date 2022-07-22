@@ -104,48 +104,9 @@ a.navlink:hover{
 
 
 
-
-/*estilos header*/
-
- /* .header {
-  height: 50px;
-  width: 100%;
-  color: var(--tinto);
-  margin: 0;
-  padding-left: 30px;
-  display: flex;
-  align-items:center;
-  justify-content:space-evenly;
-}
-
-.header img {
-  height: 50%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -100;
-  opacity: 80%;
-}
-
-.textosheader {
-  display:none;
-    
-} */
-
-
- /* .contentwrap {
- 
-  padding-bottom: 75px; 
-} */
-
-
-
 /*-------- estilos home-----------*/
 
-/* .containerhome {
-  background-color: var(--light-viña);
-} */
+
 
 .texthome h1 {
 color: var(--tinto);
@@ -172,6 +133,7 @@ margin-top: 50px;
   padding-bottom: 30px;
   border-radius: 5px;
   margin: 10px;
+  
 
 }
 
@@ -213,6 +175,7 @@ margin-top: 50px;
   padding-bottom: 30px;
   border-radius: 5px;
   margin: 10px;
+  
 }
 
 .containerText2{
@@ -251,6 +214,7 @@ margin-top: 50px;
   padding-bottom: 30px;
   border-radius: 5px;
   margin: 10px;
+  
   
 
 }
@@ -302,10 +266,8 @@ margin-top: 50px;
   background-position: center center;
   background-size: cover;
   min-height:10vh;
- 
-    
+     
 }
-
 
 .footer p{
   font-size: 0.5rem;
@@ -326,48 +288,61 @@ margin-top: 50px;
 }
 
 
-
 /*-------- estilos en el login------------*/
 
-.loginpage {
+ .loginpage {
   display: flex;
   justify-content: center;
-  background-image: url("https://static2.diariosur.es/www/multimedia/202106/18/media/cortadas/1-k20D-U140754340573k6B-1968x1216@Diario%20Sur.jpg");
+  background-image: url("./assets/loginimage.jpg");
+  background-size: cover;
+  background-position: center; 
   width: 100%;
   min-height: 100%;
   padding: 10px;
   margin-top: 50px;
-  /* opacity: 60%; */
+
   
+ } 
 
-}
+ .cardImage {
+  background-image: url('./assets/loginimage.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 10rem;
+  width: 100%;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  position:static;
 
-.loginform{
+ }
+
+  .loginform{
   background-color:var(--bone);
   border-radius: 2px 2px 5px 5px;;
   padding:10px 20px 20px 20px ;
-  /* position: absolute; */
   margin: 10px;
-  margin-top: 25px;
-}
+  margin-top: 25px; 
+  box-shadow:0 0 10px 5px;
+ }
+
 .labelform {
 font-size: 0.6rem;
 color: var(--tinto);
 
-}
+} 
 
 .loginform h3 {
   color: var(--viña2);
   font-size: 0.8rem;
-  margin-top: 0px;
-}
+  margin-top: 15px;
+} 
 
 .loginform > form div {
   
   margin-top: 15px;
   margin-left: 10px;
-}
-
+} 
+ 
 .loginform input {
 
   display: block;
@@ -380,9 +355,9 @@ color: var(--tinto);
   border-radius: 2px;
   color:var(--viña2);
 
-}
+} 
 
-.newaccount {
+ .newaccount {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -392,7 +367,7 @@ color: var(--tinto);
   border-radius: 10px;
   height: 50px;
 
-}
+} 
 
 .loginform button,
 .newaccount button {
@@ -405,31 +380,31 @@ color: var(--tinto);
   color: var(--bone);
   cursor: pointer;
   
-}
+} 
 
-.newaccount button {
+ .newaccount button {
   margin-left: -10px;
-}
+} 
 
 .loginform button:hover{
   background-color: var(--light-viña);
   color: var(--viña);
-} 
-
+}  
 
 .newaccount button:hover {
   background-color: var(--light-viña);
   color: var(--viña);
-} 
+}   
+
 
 
 /*--------- estilos DenominationsPage-----------*/
 
 .denominations h1{
   color: var(--tinto);
-  margin-top: 50px;
-  
-  
+  margin-top: 100px;
+  margin-left: 20px;
+ 
 }
 
 .divImages {
@@ -446,8 +421,9 @@ color: var(--tinto);
   align-items: center;
   justify-content:center;
   width: 70%;
-  
-  
+  margin-left: auto;
+  margin-right: auto;
+   
 }
 
 .imageDO {
@@ -467,10 +443,10 @@ color: var(--tinto);
 
 .imageText p{
   margin-left: 0.8rem;
+  margin-top: -8px;
   font-size: 10px;
   color:var(--viña2);
-
-  
+ 
 }
 
 .heading .buscadorBodegas {
@@ -484,15 +460,16 @@ color: var(--tinto);
 
  .heading button{
  
-  width: 80px;
-  height: 25px;
+  width: 90px;
+  height: 40px;
   border: solid 1px grey;
   border-radius: 5px;
   font-size: 0.5rem;
   background-color: var(--viña);
   color: var(--bone);
   cursor: pointer;
-  margin-bottom: 10px; 
+  margin-bottom: 30px; 
+  margin-top: 20px;
  }
 
  .heading button:hover{
@@ -511,43 +488,57 @@ color: var(--tinto);
   margin-top: 50px;
 }
 
+.gridWineries {
+
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-columns: auto;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
 
 
+}
 
 .winerie {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-self: center;
-  margin: 5px;
-  color: var(--viña);
-  padding: 10px;
-  border-radius: 10px;
-  padding: 10px; 
-  width: 80vw;
-  margin-top: 25px;
+
+  height: 18rem;
+  width: 13rem;
+  background-color: whitesmoke;
+  border-radius: 1.5rem;
+  box-shadow: 0 0.20rem 0.20rem 0 gray;
+  transition: 0.2s ease-in;
+  padding: 1rem;
+  margin-top: 20px;
 
 }
 
 .winerie h2{
   font-size: 0.8rem;
+  color: var(--viña2);
   
 }
 .winerie h3{
   font-size: 0.6rem;
   margin: 2px;
+  color: var(--viña);
 }
 .winerie p{
   font-size: 0.5rem;
   margin: 2px;
+  color: var(--viña);
 }
 .winerie span{
   font-size: 0.5rem;
   margin-bottom: 10px;
+  color: var(--viña);
 }
 
 .winerie img {
   width: 100%;
+  height: 50%;
   border-radius: 10px;
 }
 
@@ -855,6 +846,7 @@ a.navlink:hover{
     display: flex;
     flex-direction: row;
     justify-content:center;
+    align-items: center;
     background-color: var(--viña);
     color: var(--light-viña);
     height: 15%;
@@ -869,7 +861,8 @@ a.navlink:hover{
   .footer p{
     
     margin-right: 25px;
-    font-size: 0.5rem;
+    font-size: 10px;
+  
     
   }
   
@@ -893,8 +886,11 @@ a.navlink:hover{
   .loginpage {
     display: flex;
     justify-content: center;
-    background-image: url("https://static2.diariosur.es/www/multimedia/202106/18/media/cortadas/1-k20D-U140754340573k6B-1968x1216@Diario%20Sur.jpg");
+    background-image: url("./assets/loginimage.jpg");
+    background-size: cover;
+    background-position: center; 
     width: 100%;
+    height: 500px;
     min-height: 100%;
     padding: 10px;
     margin-top: 50px;
@@ -986,11 +982,16 @@ a.navlink:hover{
   
   /*--------- estilos DenominationsPage-----------*/
   
+  .denominations {
+    
+    width: 80%;
+  }
+  
   .denominations h1{
     color: var(--tinto);
-    margin-top: 50px;
-    
-    
+    margin-top: 100px;
+    margin-left: 30%;
+      
   }
 
   .containerDo1 {
@@ -999,6 +1000,7 @@ a.navlink:hover{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+  
   }
   .containerDo2 {
     display: flex;
@@ -1017,15 +1019,11 @@ a.navlink:hover{
 
   }
   
-   /* .imageText { 
-     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    width: 50%; 
-    
-    
-  } */
+   .imageText { 
+    height: 50%; 
+    margin-bottom: 20px;
+      
+  }
   
   .imageDO {
     height: 40vh;
@@ -1053,24 +1051,27 @@ a.navlink:hover{
   
   .heading .buscadorBodegas {
   
-    color: var(--viña);
+    /* color: var(--viña);
     
     font-size: 0.8rem;
-    text-decoration: none;
-   
+    text-decoration: none; */
+  
+    
    }
   
    .heading button{
    
-    width: 80px;
-    height: 25px;
+    width: 90px;
+    height: 40px;
     border: solid 1px grey;
     border-radius: 5px;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     background-color: var(--viña);
     color: var(--bone);
     cursor: pointer;
     margin-bottom: 10px; 
+    margin-left: 30%;
+    
    }
   
    .heading button:hover{
@@ -1081,34 +1082,37 @@ a.navlink:hover{
   
   /*-------------estilos WineriesPage-----------*/
   
-  .BrowserCardStyle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-self: center;
-    margin-top: 50px;
+  
+  .gridWineries {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-column-gap: 5px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+
   }
-  
-  
-  
-  
+   
   .winerie {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-self: center;
-    margin: 5px;
-    color: var(--viña);
-    padding: 10px;
-    border-radius: 10px;
-    padding: 10px; 
-    width: 80vw;
-    margin-top: 25px;
+    height: 19rem;
+    width: 13rem;
+    background-color: whitesmoke;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.25rem 0.25rem 0 gray;
+    transition: 0.2s ease-in;
+    padding: 1rem;
+    margin-top: 20px;
   
   }
   
   .winerie h2{
     font-size: 0.8rem;
+    color: var(--viña2);
     
   }
   .winerie h3{
@@ -1126,6 +1130,7 @@ a.navlink:hover{
   
   .winerie img {
     width: 100%;
+    height: 50%;
     border-radius: 10px;
   }
   

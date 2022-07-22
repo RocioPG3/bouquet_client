@@ -15,7 +15,7 @@ export default function Router() {
   return (
     <div>
       <div className="pagecontainer">
-        <div className="contentwrap">
+        <div>
           <BrowserRouter>
 
             <Navbar />
