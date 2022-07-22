@@ -21,6 +21,7 @@ export default function DenominationsPage() {
       <div className='heading'>
 
               <div className="divImages">
+                <div className='containerDo1'>
                     <div className="imageText">
                         <img className="imageDO" src="https://static3.larioja.com/lomejordelvinoderioja/multimedia/201907/30/media/cortadas/unnamed-ksNF-U80876854257LTF-1248x770@La%20Rioja.jpg" alt="" />
                         <h2>Rioja</h2>
@@ -41,6 +42,8 @@ export default function DenominationsPage() {
                         <h2>Toro</h2>
                         <p>Esta DO es del año 1987. Se puede considerarse una de las grandes denominaciones de España, ya que se tiene constancia de su origen desde los griegos que vinieron a la península, y siempre sus vinos han estado protagonizando partes de la historia de España. Sin ir más lejos la batalla que ganaron los Reyes Católicos en Toro fue en un campo de viñedos </p>
                     </div>
+                </div>
+                <div className='containerDo2'>
                     <div className="imageText">
                         <img className="imageDO" src="https://www.asajacr.com/wp-content/uploads/2019/06/purple-grapes-553464_1280.jpg" alt="" />
                         <h2>Valdepeñas</h2>
@@ -61,6 +64,7 @@ export default function DenominationsPage() {
                         <h2>Arlanza</h2>
                         <p>Esta DO se encuentra situadas entre Burgos y Palencia, de gran tradición vitivinícola, fue muy importante en la Edad Media, pero a principios del siglo XX sufrió un declive muy importante, que tuvo una recuperación, cuando en los años 90 se le otorgo una IGP a la zona de Arlanza que termino en el año 2007 con la consecución de la Denominación de Origen </p>
                     </div>
+                </div>
 
 
 
