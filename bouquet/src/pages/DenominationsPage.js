@@ -30,7 +30,7 @@ export default function DenominationsPage() {
                     <div className="imageText">
                         <div className= "imageDO2"></div>
                         <h2>Ribera del Duero</h2>
-                        <p>La Ribera del Duero es una de las grandes zonas de producción de vinos y en una de sus partes se extiende la D.O. Ribera del Duero, con mas de 2000 historia de producción de vinos, la denominación como hoy la conocemos, surge de la unión de diversos viticultores y bodegueros que apostaron por las especiales características de la zona para la optima producción de vinos de calidad, esto ocurrió en 1980, consiguiendo la categoría de Denominación de Origen en 1982.</p>
+                        <p>La Ribera del Duero es una de las grandes zonas de producción de vinos y en una de sus partes se extiende la D.O. Ribera del Duero, con mas de 2000 historia de producción de vinos, la denominación como hoy la conocemos, surge de la unión de diversos viticultores y bodegueros que apostaron por las especiales características de la zona.</p>
                     </div>
                 </div>
                 <div className='containerDo2'>

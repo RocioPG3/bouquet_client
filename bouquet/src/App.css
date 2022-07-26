@@ -400,39 +400,209 @@ color: var(--tinto);
 
 /*--------- estilos DenominationsPage-----------*/
 
+.denominations {
+  width: 100%;
+}
+
 .denominations h1{
   color: var(--tinto);
   margin-top: 100px;
-  margin-left: 20px;
- 
+  text-align: center;
+    
+}
+
+.containerDo1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+
+}
+.containerDo2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.containerDo3 {
+  display: flex;
+  flex-direction:column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+
+}
+.containerDo4 {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+
 }
 
 .divImages {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   margin-bottom: 20px;
-}
-
-.imageText {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content:center;
-  width: 70%;
   margin-left: auto;
   margin-right: auto;
-   
+  width: 100%;
+
 }
 
-.imageDO {
-  height: 40vh;
-  width: 50vh;
-  margin: 1.5rem;
-  margin-left:3rem;
-  border-radius: 20%; 
+ .imageText { 
+  background-color: var(--light-viña);
+  width: 100%;
+  height: 25rem; 
+  margin:20px;
+  border-radius: 5px;
+    
+}
 
+.imageDO1 {
+  background: url('https://static3.larioja.com/lomejordelvinoderioja/multimedia/201907/30/media/cortadas/unnamed-ksNF-U80876854257LTF-1248x770@La%20Rioja.jpg') no-repeat;
+  height:40%;
+  width:80%;
+  margin:auto;
+  margin-top: 10px;
+  border-radius: 20%; 
+  background-size: cover;
+  background-position: center; 
+  
+}
+
+.imageDO1:hover {
+  background:url('./img/Rioja.png') no-repeat;
+  background-size: cover;
+  background-position: center; 
+ 
+}
+.imageDO2 {
+  background: url('https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2017/09/18/15057240818716.jpg') no-repeat;
+  height:40%;
+  width:80%;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 20%; 
+  background-size: cover;
+  background-position: center; 
+  
+}
+
+.imageDO2:hover {
+  background:url('./img/Ribera\ del\ duero.png') no-repeat;
+  background-size: cover;
+  background-position: center; 
+}
+.imageDO3 {
+  background: url('https://images.rimontgowineries.com/img/slider/dos/45/98f7e96562de56ad4f38d4d89991e1b7.jpg') no-repeat;
+  height:40%;
+  width:80%;
+  margin:auto;
+  margin-top: 10px;
+  border-radius: 20%; 
+  background-size: cover;
+  background-position: center; 
+  
+}
+
+.imageDO3:hover {
+  background:url('./img/Yecla.JPG') no-repeat;
+  background-size: cover;
+  background-position: center; 
+}
+
+.imageDO4 {
+  background: url('https://nuevecuatrouno.com/wp-content/uploads/2019/11/enoturismo-aldeanueva-ebro.jpeg') no-repeat;
+  height:40%;
+  width:80%;
+  margin:auto;
+  margin-top: 10px;
+  border-radius: 20%; 
+  background-size: cover;
+  background-position: center; 
+  
+}
+
+.imageDO4:hover {
+  background:url('./img/Toro.JPG') no-repeat;
+  background-size: cover;
+  background-position: center; 
+}
+
+.imageDO5 {
+  background: url('https://www.asajacr.com/wp-content/uploads/2019/06/purple-grapes-553464_1280.jpg') no-repeat;
+  height:40%;
+  width:80%;
+  margin:auto;
+  margin-top: 10px;
+  border-radius: 20%; 
+  background-size: cover;
+  background-position: center; 
+  
+}
+
+.imageDO5:hover {
+  background:url('./img/Valdepeñas.JPG') no-repeat;
+  background-size: cover;
+  background-position: center; 
+}
+
+.imageDO6 {
+  background: url('https://vinosdo.wine/assets/uploads/2018/04/ribera-guadiana-1.jpg') no-repeat;
+  height:40%;
+  width:80%;
+  margin:auto;
+  margin-top: 10px;
+  border-radius: 20%; 
+  background-size: cover;
+  background-position: center; 
+  
+}
+
+.imageDO6:hover {
+  background:url('./img/Ribera\ del\ Guadiana.JPG') no-repeat;
+  background-size: cover;
+  background-position: center; 
+}
+.imageDO7 {
+  background: url('https://static2.diariosur.es/www/multimedia/202106/18/media/cortadas/1-k20D-U140754340573k6B-1968x1216@Diario%20Sur.jpg') no-repeat;
+  height:40%;
+  width:80%;
+  margin:auto;
+  margin-top: 10px;
+  border-radius: 20%; 
+  background-size: cover;
+  background-position: center; 
+  
+}
+
+.imageDO7:hover {
+  background:url('./img/Sierra\ de\ Málaga.JPG') no-repeat;
+  background-size: cover;
+  background-position: center; 
+}
+.imageDO8 {
+  background: url('https://www.turismoarlanza.es/es/wp-content/uploads/2021/09/2021-09-21-19.26.50.jpg') no-repeat;
+  height:40%;
+  width:80%;
+  margin:auto;
+  margin-top: 10px;
+  border-radius: 20%; 
+  background-size: cover;
+  background-position: center; 
+  
+}
+
+.imageDO8:hover {
+  background:url('./img/Arlanza.png') no-repeat;
+  background-size: cover;
+  background-position: center; 
 }
 
 .imageText h2{
@@ -442,12 +612,14 @@ color: var(--tinto);
 }
 
 .imageText p{
-  margin-left: 0.8rem;
-  margin-top: -8px;
-  font-size: 10px;
+  margin:auto;
+  font-size: 9px;
   color:var(--viña2);
- 
+  width: 60%;
+
+  
 }
+
 
 .heading .buscadorBodegas {
 
@@ -475,6 +647,7 @@ color: var(--tinto);
  .heading button:hover{
   background-color: var(--light-viña);
   color: var(--viña);
+  font-size:0.9rem;
 } 
 
 
@@ -983,14 +1156,13 @@ a.navlink:hover{
   /*--------- estilos DenominationsPage-----------*/
   
   .denominations {
-    
     width: 100%;
   }
   
   .denominations h1{
     color: var(--tinto);
     margin-top: 100px;
-  text-align: center;
+    text-align: center;
       
   }
 
@@ -1038,17 +1210,20 @@ a.navlink:hover{
   }
   
    .imageText { 
+    background-color: var(--light-viña);
     width: 80%;
-    height: 60%; 
-    margin-bottom: 20px;
+    height: 25rem; 
+    margin:20px;
+    border-radius: 5px;
       
   }
   
   .imageDO1 {
     background: url('https://static3.larioja.com/lomejordelvinoderioja/multimedia/201907/30/media/cortadas/unnamed-ksNF-U80876854257LTF-1248x770@La%20Rioja.jpg') no-repeat;
-    height: 40vh;
-    width: 50vh;
-    margin: 1.5rem;
+    height: 50vh;
+    width: 60vh;
+    margin:auto;
+    margin-top: 20px;
     border-radius: 20%; 
     background-size: cover;
     background-position: center; 
@@ -1063,9 +1238,10 @@ a.navlink:hover{
 
   .imageDO2 {
     background: url('https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2017/09/18/15057240818716.jpg') no-repeat;
-    height: 40vh;
-    width: 50vh;
-    margin: 1.5rem;
+    height: 50vh;
+    width: 60vh;
+    margin:auto;
+    margin-top: 20px;
     border-radius: 20%; 
     background-size: cover;
     background-position: center; 
@@ -1079,9 +1255,10 @@ a.navlink:hover{
   }
   .imageDO3 {
     background: url('https://images.rimontgowineries.com/img/slider/dos/45/98f7e96562de56ad4f38d4d89991e1b7.jpg') no-repeat;
-    height: 40vh;
-    width: 50vh;
-    margin: 1.5rem;
+    height: 50vh;
+    width: 60vh;
+    margin:auto;
+    margin-top: 20px;
     border-radius: 20%; 
     background-size: cover;
     background-position: center; 
@@ -1096,9 +1273,10 @@ a.navlink:hover{
 
   .imageDO4 {
     background: url('https://nuevecuatrouno.com/wp-content/uploads/2019/11/enoturismo-aldeanueva-ebro.jpeg') no-repeat;
-    height: 40vh;
-    width: 50vh;
-    margin: 1.5rem;
+    height: 50vh;
+    width: 60vh;
+    margin:auto;
+    margin-top: 20px;
     border-radius: 20%; 
     background-size: cover;
     background-position: center; 
@@ -1113,9 +1291,10 @@ a.navlink:hover{
   
   .imageDO5 {
     background: url('https://www.asajacr.com/wp-content/uploads/2019/06/purple-grapes-553464_1280.jpg') no-repeat;
-    height: 40vh;
-    width: 50vh;
-    margin: 1.5rem;
+    height: 50vh;
+    width: 60vh;
+    margin:auto;
+    margin-top: 20px;
     border-radius: 20%; 
     background-size: cover;
     background-position: center; 
@@ -1130,9 +1309,10 @@ a.navlink:hover{
 
   .imageDO6 {
     background: url('https://vinosdo.wine/assets/uploads/2018/04/ribera-guadiana-1.jpg') no-repeat;
-    height: 40vh;
-    width: 50vh;
-    margin: 1.5rem;
+    height: 50vh;
+    width: 60vh;
+    margin:auto;
+    margin-top: 20px;
     border-radius: 20%; 
     background-size: cover;
     background-position: center; 
@@ -1146,9 +1326,10 @@ a.navlink:hover{
   }
   .imageDO7 {
     background: url('https://static2.diariosur.es/www/multimedia/202106/18/media/cortadas/1-k20D-U140754340573k6B-1968x1216@Diario%20Sur.jpg') no-repeat;
-    height: 40vh;
-    width: 50vh;
-    margin: 1.5rem;
+    height: 50vh;
+    width: 60vh;
+    margin:auto;
+    margin-top: 20px;
     border-radius: 20%; 
     background-size: cover;
     background-position: center; 
@@ -1162,9 +1343,10 @@ a.navlink:hover{
   }
   .imageDO8 {
     background: url('https://www.turismoarlanza.es/es/wp-content/uploads/2021/09/2021-09-21-19.26.50.jpg') no-repeat;
-    height: 40vh;
-    width: 50vh;
-    margin: 1.5rem;
+    height: 50vh;
+    width: 60vh;
+    margin:auto;
+    margin-top: 20px;
     border-radius: 20%; 
     background-size: cover;
     background-position: center; 
@@ -1184,7 +1366,7 @@ a.navlink:hover{
   }
   
   .imageText p{
-    margin-left: 0.8rem;
+    margin:auto;
     font-size: 8px;
     color:var(--viña2);
     width: 60%;
@@ -1213,6 +1395,7 @@ a.navlink:hover{
    .heading button:hover{
     background-color: var(--light-viña);
     color: var(--viña);
+    font-size:0.9rem;
   } 
   
   
