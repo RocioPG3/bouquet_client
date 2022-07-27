@@ -1,34 +1,29 @@
-import React, {useContext} from "react";
+import React from "react";
 import { useNavigate } from 'react-router-dom';
-import { GlobalContext } from "../App";
 
 
+export default function Winerie({ wineries }) {
+  const navigate = useNavigate();
 
+  // const { setIdWinerie } = useContext(GlobalContext);
 
-export default function Wineries({wineries}) {
+  function handleClick(id) {
+    // setIdWinerie(id);                /* para que setee el id de la ficha en la que hemos hecho click */
 
-const navigate = useNavigate();
-
-const { setIdWinerie } = useContext(GlobalContext);
-
-function handleClick(id) {
-  setIdWinerie(id);                /* para que haga set en el id de la ficha en la que hemos hecho click */
-
-  navigate(`/ficha/${id}`)   /* para que vaya a la página de ficha/la ficha a la que le hemos hecho click */
-}
-
-
-
+    navigate(`/ficha/${id}`); /* para que vaya a la página de ficha/la ficha a la que le hemos hecho click */
+  }
 
   return (
-    <div className='winerie'>
-        <h2>{wineries.name}</h2>
-        <h3>{wineries.do}</h3>
+    <div className="BrowserCardStyle">
+      <div className="winerie">
+        <h2> {wineries.name} </h2>
+        <img src="https://www.rutasdelvinorioja.com/wp-content/uploads/2020/11/Ruta-del-Vino-de-Rioja-Alta-Bodegas-Ramon-Bilbao-Exterior.jpg" alt=""/>   
+        {/* TODO: la imagen posteriormente la tendre que poner en formato {} para que a cada ruta le asigne la suya */}
+        <h3>{wineries.denomination}</h3>
         <p>{wineries.location}</p>
-        <span>{wineries.telephone}</span>
-        <img src={wineries.image} alt="" />
-        <button onClick={(e) => handleClick(wineries.id)}>Quiero saber más</button>
 
+        <button onClick={(e) => handleClick(wineries.id)}>Más información</button>
+      </div>
     </div>
-  )
+  );
 }

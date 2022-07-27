@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
-import { GlobalContext } from '../App';
+import { useState } from "react";
 import { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+
 // import Wineries from '../components/Wineries';
 
 import Ficha from '../components/Ficha';
@@ -8,25 +10,16 @@ import Ficha from '../components/Ficha';
 
 export default function FichaPage() {
 
-const [ wineries, idWineries] = useContext(GlobalContext);
-//const [ficha, setFicha] = useState({});
+const { id } = useParams();
+const [ficha, setFicha] = useState({});
 
-const ficha = wineries.filter((winerie) => winerie.id === idWineries);
-    // setFicha(fichaFiltrada);
-
-// const URL ="https://run.mocky.io/v3/59c7abee-36b5-4e59-b96a-6573480f5df9"
-
-    useEffect(() => {
-      console.log(ficha);
-    
-  
-    }, [ficha])
+const URL = "http://localhost/bouquet_server/public/index.php/api/winerie/"+id;
       
-//     useEffect(() => {
-//     fetch(URL)
-//         .then(r => r.json())
-//         .then(data => setWineries(data));
-// }, [URL])
+    useEffect(() => {
+    fetch(URL)
+        .then(r => r.json())
+        .then(data => setFicha(data));
+}, [URL])
 
       
   return (
