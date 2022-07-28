@@ -1,20 +1,30 @@
-import React from "react";
-/* import { useHistory } from "react-router"; */
 
-export default function Reservas() {
+import React, { useEffect, useState } from "react";
 
-    /* const history = useHistory();
-    function handleClick(e) {
-        history.push("/ficha")
-    }  */
+export default function Bookings() {
+
+    const [winerieNames, setWinerieNames] = useState([]);    
+
+
+    let URL = "http://localhost/bouquet_server/public/index.php/api/wineries/select";
+
+    useEffect(() => {
+        fetch(URL)
+          .then(r => r.json())
+          .then(data => setWinerieNames(data));
+        }, [URL]) 
 
     return (
         <div className="bookings">
             <h3>Reserva tu bodega</h3>
             <form action="#" method="POST">
 
-                <label htmlFor="contactRoute">Bodega:</label>
-                <input type="text" name="contactRoute" id="contactRoute" required placeholder="Introduzca el nombre de la bodega" />
+                <label htmlFor="contactWinerie">Bodega:</label>
+                <select name="contactWinerie" id="contactWinerie" required >
+                   {winerieNames.map(winerieName => {
+                       return (<option key={winerieName} value={winerieName}>{winerieName}</option>)
+                   })} 
+                </select>
 
                 <label htmlFor="contactDate">Fecha visita:</label>
                 <input type="date" name="contactDate" id="contactDate" required />

@@ -10,14 +10,15 @@ export default function Ficha( { ficha }) {
     }
   return (
     <div className='wineries'>
-        <h2> {ficha[0].name} </h2>
-        <img src={ficha[0].photo} alt="" />
-        <h3>{ficha[0].do}</h3>
-        <p>{ficha[0].location}</p>
-        <p>{ficha[0].telephone}</p>
-        <img src={ficha[0].image} alt="" />
-        <button onClick={(e) => handleClick(e)}>Quiero reservar</button>
-        {/* <button onClick={(e) => handleClick(e)}>Quiero saber más</button> */}
+              <h2> {ficha.name} </h2>
+              <h3>{ficha.denomination}</h3>
+              <p>{ficha.address}</p>
+              <p>{ficha.telephone}</p>
+              <p>{ficha.description}</p>
+              <img src="https://harodigital.com/wp-content/uploads/2020/12/ramon-bilbao-scaled.jpg" alt=""/>
+              {/* TODO: la imagen posteriormente la tendre que poner en formato {} para que a cada ruta le asigne la suya */}
+          <button onClick={(e) => handleClick(e)}>Quiero reservar</button>
+          {/* <button onClick={(e) => handleClick(e)}>Quiero saber más</button> */}
 
 
 
