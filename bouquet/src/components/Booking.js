@@ -1,33 +1,38 @@
 
 import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 export default function Bookings() {
 
-    const [routeNames, setRouteNames] = useState([]);    
+    const [routeDetails, setRouteDetails] = useState([]);    
+    
+    const { id } = useParams();
 
+    let URL = "http://localhost/bouquet_server/public/index.php/api/wineries/read/booking/see/${id}";
+    
 
-    let URL = "http://localhost/bouquet_server/public/index.php/api/wineries/read/select";
 
     useEffect(() => {
         fetch(URL)
         .then((r) => r.json())
-        .then((data) => setRouteNames(data["data"]));
+        .then((data) => setRouteDetails(data["data"][0]));
     }, [URL]);
   
     return (
       <div className="bookings">
         <h3>Reserva tu bodega</h3>
+
         <form action="#" method="POST">
           <label htmlFor="contactRoute">Bodega para visitar:</label>
-          <select name="contactRoute" id="contactRoute" required>
-            {routeNames.map((routeName) => {
-              return <option value={routeName.id}>{routeName.name}</option>;
-            })}
-          </select>
+          <p>{routeDetails.name}</p>
   
           <label htmlFor="contactDate">Fecha de interés:</label>
-          <input type="date" name="contactDate" id="contactDate" required />
-  
+          <select name="availability" id="">
+          {routeDetails.wineriesAvailabilities?.map((datetime) => {
+            return <option value="datetime.id">{datetime.datetime}</option>;
+          })}
+        </select>
+
           <label htmlFor="contactName">Nombre:</label>
           <input
             type="text"

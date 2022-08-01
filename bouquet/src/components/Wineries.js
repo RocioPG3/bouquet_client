@@ -17,8 +17,7 @@ export default function Winerie({ wineries }) {
     <div className="BrowserCardStyle">
       <div className="winerie">
         <h2> {wineries.name} </h2>
-        <img src="https://www.rutasdelvinorioja.com/wp-content/uploads/2020/11/Ruta-del-Vino-de-Rioja-Alta-Bodegas-Ramon-Bilbao-Exterior.jpg" alt=""/>   
-        {/* TODO: la imagen posteriormente la tendre que poner en formato {} para que a cada ruta le asigne la suya */}
+        <img src={wineries.image} alt="" />
         <h3>{wineries.denomination}</h3>
         <p>{wineries.location}</p>
 

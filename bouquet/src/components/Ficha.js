@@ -5,15 +5,14 @@ export default function Ficha( { ficha }) {
 
     const navigate = useNavigate();
 
-    console.log(ficha.user);
+    //console.log(ficha.user);
     function handleClick(e) {
-        navigate("/booking")
+        navigate("/booking/${ficha.id}")
     }
   return (
     <div className='wineries'>
               <h2> {ficha.name} </h2>
-              <img src="https://harodigital.com/wp-content/uploads/2020/12/ramon-bilbao-scaled.jpg" alt=""/>
-               {/* TODO: la imagen posteriormente la tendre que poner en formato {} para que a cada bodega le asigne la suya */}
+              <img src={ficha.image} alt="imagen de bodega" />
               <h3>{ficha.denomination}</h3>
               <p>{ficha.address}</p>
               <p>{ficha.user?.email}</p>
