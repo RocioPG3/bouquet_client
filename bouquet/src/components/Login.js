@@ -3,8 +3,26 @@ import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const navigate = useNavigate();
-  function handleForm() {
-    navigate("/form");
+  function handleAuth() {
+    const user = window.document.getElementById("user").value;
+    const password = window.document.getElementById("password").value;
+  
+    fetch("http://localhost/bouquet_server/public/index.php/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        //        Authorization: "Bearer" + localStorage.getItem("token"),
+      },
+      body: JSON.stringify({ username: user, password: password }),
+    }).then((data) =>
+      data.json().then((data) => {
+        localStorage.setItem("token", data["token"]);
+      })
+    );
+  }
+
+  function handleRegister() {
+    navigate("/register");
   }
 
   return (
@@ -28,11 +46,10 @@ export default function Login() {
             />
           </div>
           <div>
-            <button type="submit">Sign In</button>
-            <div className="newaccount">
-            <button onClick={handleForm}>Crea una nueva cuenta</button>
+            <button onClick={handleAuth}>Iniciar sesión</button>
+            <button onClick={handleRegister}>Crear una cuenta</button>
             </div>
-          </div>
+  
         </form>
       </div>
     </div>
