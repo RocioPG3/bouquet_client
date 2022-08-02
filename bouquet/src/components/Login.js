@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const navigate = useNavigate();
-  function handleAuth() {
+  function handleAuth(e) {
+    e.preventDefault();
     const user = window.document.getElementById("user").value;
     const password = window.document.getElementById("password").value;
   
@@ -17,12 +18,14 @@ export default function Login() {
     }).then((data) =>
       data.json().then((data) => {
         localStorage.setItem("token", data["token"]);
+
+        navigate("/Admin")
       })
     );
   }
 
   function handleRegister() {
-    navigate("/register");
+    navigate("/Register");
   }
 
   return (
@@ -34,14 +37,14 @@ export default function Login() {
         <form className="loginCard" action="#" method="GET">
           <div>
             <label  className="labelform" htmlFor="userEmail">Email:</label>
-            <input type="email" name="userEmail" id="userEmail" required />
+            <input type="email" name="userEmail" id="user" required />
           </div>
           <div>
             <label className="labelform" htmlFor="userPassword">Password:</label>
             <input
               type="password"
               name="userPassword"
-              id="userPassword"
+              id="password"
               required
             />
           </div>

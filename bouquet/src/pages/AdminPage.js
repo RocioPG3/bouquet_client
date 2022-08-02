@@ -8,10 +8,14 @@ export default function AdminPage() {
   
   const navigate = useNavigate();
   function handleClick() {
-    navigate("/newWinerieForm/");
+
+   
+
+    navigate("/newWinerieForm");
   }
   const [wineries, setWineries] = useState([]);
-;
+  
+
 
   const URL = "http://localhost/bouquet_server/public/index.php/admin/wineries/read/user";
   useEffect(() => {
@@ -20,11 +24,11 @@ export default function AdminPage() {
     headers: {
       
       "Content-Type": "application/json",
-      "Authorization": `Bearer ${localStorage.getItem("token")}`,
+        "Authorization": `Bearer ${localStorage.getItem("token")}`,
     },
   }).then((request) =>
     request.json().then((data) => {
-      console.log(data);
+      setWineries(data["data"]);
     })
   );
 }, [URL]);
