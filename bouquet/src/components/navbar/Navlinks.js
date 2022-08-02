@@ -23,6 +23,10 @@ export default function Navlinks(props) {
         <NavLink to="/Login" className="navlink" activeclassname="active" onClick={()=> props.isMobile && props.closeMobileMenu()}>
           Login
         </NavLink>
+        <NavLink to="/Admin" className="navlink" activeclassname="active" onClick={()=> props.isMobile && props.closeMobileMenu()}>
+          Admin
+        </NavLink>
+       
       </div>
     </>
   );

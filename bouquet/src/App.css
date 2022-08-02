@@ -795,6 +795,61 @@ color: var(--tinto);
 }
 
 
+/* WinerieCrud y AdminPage: */
+
+.winerieCrud {
+  border: 3px solid var(--black);
+  margin: 20px;
+  padding-bottom: 1rem;
+}
+
+.winerieCrud h2 {
+  font-size: 1.3rem;
+}
+
+.buttonViña {
+  background-color: rgb(81, 136, 81);
+  color: white;
+  border: solid 1px rgb(81, 136, 81);
+  border-radius: 5px;
+  width: 500px;
+  font-size: 1.3rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.buttonViña:hover {
+  background-color: rgb(61, 117, 61);
+}
+
+.crudButtons .buttonViña {
+  background-color: rgb(30, 168, 223);
+  color: white;
+  border: solid 1px rgb(30, 168, 223);
+  margin: 0 5px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.buttonViña:hover {
+  background-color: rgb(34, 91, 138);
+}
+
+.crudButtons .buttonTinto {
+  background-color: rgb(236, 63, 20);
+  color: white;
+  border: solid 1px rgb(236, 63, 20);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.buttonTinto:hover {
+  background-color: rgb(138, 34, 39);
+}
+
+
+
 
 
 /*Media query para desktop*/
