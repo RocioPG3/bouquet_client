@@ -10,6 +10,7 @@ import Navbar from "./navbar/Navbar";
 import Footer from "./Footer";
 import AdminPage from "../pages/AdminPage";
 import NewWinerieFormPage from "../pages/NewWinerieFormPage";
+import EditWinerieFormPage from "../pages/EditWinerieFormPage";
 import ErrorPage from "../pages/ErrorPage";
 
 
@@ -30,6 +31,7 @@ export default function Router() {
               <Route path="/Ficha/:id" element={<FichaPage />} />
               <Route path="/Admin" element={<AdminPage />} />
               <Route path="/newWinerieForm" element={<NewWinerieFormPage />} />
+              <Route path="/editWinerieForm/:id" element={<EditWinerieFormPage />} />
               <Route path="/Login" element={<LoginPage />} />
               <Route path="/Register" element={<RegisterPage />} />
               <Route path="/Booking/:id" element={<BookingPage />} />
