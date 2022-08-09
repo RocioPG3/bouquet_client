@@ -1,14 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router";
 
-export default function WinerieCrud({ winerie }) {
+export default function WinerieCrud({ wineries }) {
   const navigate = useNavigate();
 
 
   function handleClickEdit(id) {
-    // setIdWinerie(id);                /* para que setee el id de la ficha en la que hemos hecho click */
-
-    navigate(`/editWinerieForm/${id}`); /* para que vaya a la página de ficha/la ficha a la que le hemos hecho click */
+    
+    navigate(`/editWinerieForm/${id}`); 
   }
 
   function handleClickDelete(id) {
@@ -24,6 +23,7 @@ export default function WinerieCrud({ winerie }) {
       if (res === 202){
         alert("¡Bodega eliminada!")
       }
+      
     });
 
     
@@ -32,16 +32,21 @@ export default function WinerieCrud({ winerie }) {
   return (
     <div>
       <div className="winerieCrud">
-        <h2> {winerie.name} </h2>
-        <h2>{winerie.denomination}</h2>
-        <p>{winerie.location}</p>
+        <h2>{wineries.denomination}</h2>
+        <h2>{wineries.name}</h2>
+        <p>{wineries.location}</p>
+        <p>{wineries.address}</p>
+        <p>{wineries.telephone}</p>
+        <p>{wineries.services}</p>
+        <p>{wineries.description}</p>
+        <img src={wineries.image} alt="imagen bodega" />
 
         <div className="crudButtons">
-          <button className="buttonViña" onClick={(e) => handleClickEdit(winerie.id)}>
-            Modificar ésta ruta
+          <button className="buttonViña" onClick={(e) => handleClickEdit(wineries.id)}>
+            Editar bodega
           </button>
-          <button className="buttonTinto" onClick={(e) => handleClickDelete(winerie.id)}>
-            Eliminar ésta ruta
+          <button className="buttonTinto" onClick={(e) => handleClickDelete(wineries.id)}>
+            Eliminar bodega
           </button>
         </div>
       </div>

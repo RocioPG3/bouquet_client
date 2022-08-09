@@ -8,28 +8,28 @@ export default function AdminPage() {
   
   const navigate = useNavigate();
   function handleClick() {
-
-   
-
-    navigate("/newWinerieForm");
+    navigate("/newWinerieForm/");
   }
   const [wineries, setWineries] = useState([]);
   
 
 
   const URL = "http://localhost/bouquet_server/public/index.php/admin/wineries/read/user";
+
   useEffect(() => {
   fetch(URL, {
     method: "GET",
     headers: {
-      
-      "Content-Type": "application/json",
+        "Content-Type": "application/json",
         "Authorization": `Bearer ${localStorage.getItem("token")}`,
     },
-  }).then((request) =>
+  }).then((request) => {
+    
     request.json().then((data) => {
       setWineries(data["data"]);
     })
+  }
+
   );
 }, [URL]);
 
@@ -37,13 +37,13 @@ export default function AdminPage() {
     <div>
       <br />
       <button className="buttonGreen" onClick={(e) => handleClick()}>
-        Añadir nueva bodega
+        Añadir bodega
       </button>
       <br />
       <br />
-      <div className="gridWineries2">
+      <div className="gridWineriesAdmin">
         {wineries?.map((winerie) => {
-          return <WinerieCrud winerie={winerie} key={winerie.id} />;
+          return <WinerieCrud wineries={winerie} key={winerie.id} />;
         })}
       </div>
     </div>

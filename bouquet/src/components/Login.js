@@ -19,7 +19,7 @@ export default function Login() {
       data.json().then((data) => {
         localStorage.setItem("token", data["token"]);
 
-        navigate("/Admin")
+        navigate("/Admin/")
       })
     );
   }

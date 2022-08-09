@@ -10,6 +10,7 @@ import Wineries from '../components/Wineries';
 export default function WineriesPage() {
 
   const [wineries, setWineries] = useState([]);
+  const [winerieFilter, setWinerieFilter] = useState('');
 
 const URL ="http://localhost/bouquet_server/public/index.php/api/wineries/read";
 
@@ -25,13 +26,46 @@ const URL ="http://localhost/bouquet_server/public/index.php/api/wineries/read";
 
       
   return (
-    <div className='gridWineries'>
-
-     {wineries?.map((wineries) => {
-        return <Wineries wineries={wineries} key={wineries.id} />;
-
-    
-    })}
+    <div>
+    <div>
+    <h1 className="wineriesTitle">TODAS NUESTRAS RUTAS</h1>
     </div>
-  )
+    <div>
+      <form className="formFinder">
+        <p className="textFinder">Buscador de bodegas:</p>
+        <input 
+        type="text"
+        placeholder="Introduce la Denominación de Origen"
+        className="inputFinder"
+        name="inputFinder"
+        autoComplete="off"
+        onChange={event => {setWinerieFilter(event.target.value)}}/>
+      </form>
+    </div>
+
+    <div className="gridWineries">
+
+      {wineries.filter((winerie) => {
+        if (winerieFilter === "") {
+          return winerie
+
+        } else if (winerie.denomination.toLowerCase().includes(winerieFilter.toLowerCase().trim())) {
+          return winerie
+          
+        } else if (winerie.location.toLowerCase().includes(winerieFilter.toLowerCase().trim())) {
+          return winerie
+        
+        } else {
+          return false
+        }
+
+      }).map((winerie) => {
+        return <Wineries wineries={winerie} key={winerie.id} />       
+      
+      })}
+              
+    </div>
+
+  </div>
+)
   } 

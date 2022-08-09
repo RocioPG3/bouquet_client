@@ -1,11 +1,12 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
-export default function NewWinerieForm() {
-  
-    const navigate= useNavigate();
+export default function EditWinerieForm() {
 
-    function handlePost() {
+  let {id} = useParams();
+
+  function handlePut() {
+   
     const denomination = document.getElementById("denomination").value;
     const name = document.getElementById("name").value;
     const location = document.getElementById("location").value;
@@ -13,11 +14,11 @@ export default function NewWinerieForm() {
     const telephone = document.getElementById("telephone").value;
     const services = document.getElementById("services").value;
     const description = document.getElementById("description").value;
-   
+    
 
-    fetch("http://localhost/bouquet_server/public/index.php/admin/wineries/create", {
-
-      method: "POST",
+    fetch(`http://localhost/bouquet_server/public/index.php/admin/wineries/edit/${id}`, {
+      
+      method: "PUT",
       headers: {
         "Content-Type": "application/json",
         "Authorization": `Bearer ${localStorage.getItem("token")}`,
@@ -30,21 +31,17 @@ export default function NewWinerieForm() {
         telephone: telephone,
         services: services,
         description: description,
-        active: 1,
         
       }),
     }).then().then();
-
-    navigate('/Admin');
   }
-  
 
   return (
     <div className="post">
-      <h3>Publicar una nueva bodega</h3>
+      <h3>Modificar bodega</h3>
 
-      <form action="#" method="POST">
-        <label htmlFor="denomination">DO</label>
+      <form action="#" method="PUT">
+        <label htmlFor="denomination">Denominación Origen:</label>
         <input
           type="text"
           name="denomination"
@@ -52,6 +49,7 @@ export default function NewWinerieForm() {
           required
           placeholder="Introduzca la denominación de origen"
         />
+
         <label htmlFor="name">Nombre bodega:</label>
         <input
           type="text"
@@ -61,7 +59,6 @@ export default function NewWinerieForm() {
           placeholder="Introduzca el nombre de la bodega"
         />
 
-
         <label htmlFor="location">Localidad:</label>
         <input
           type="text"
@@ -69,7 +66,8 @@ export default function NewWinerieForm() {
           id="location"
           required
           placeholder="Introduzca la localidad"
-        />  
+        />
+
         <label htmlFor="address">Dirección:</label>
         <input
           type="text"
@@ -77,37 +75,37 @@ export default function NewWinerieForm() {
           id="address"
           required
           placeholder="Introduzca la dirección"
-        /> 
+        />
 
         <label htmlFor="telephone">Teléfono:</label>
         <input
-          type="text"
+          type="number"
           name="telephone"
           id="telephone"
           required
           placeholder="Introduzca el teléfono"
         />
+
         <label htmlFor="services">Servicios:</label>
         <input
-          type="text"
+          type="number"
           name="services"
           id="services"
           required
-          placeholder="Introduzca los servicios que ofrece la bodega"
+          placeholder="Introduzca los servicios ofrecidos"
         />
+
         <label htmlFor="description">Descripción:</label>
         <textarea
           name="description"
           id="description"
-          placeholder="Introduzca una descripción de la bodega, su historia y tipo de vino por ejemplo."
+          placeholder="Introduzca una descripción de la bodega, su historia y tipo de vino."
         ></textarea>
-        
 
-        <button type="button" onClick={handlePost}>
+        <button type="button" onClick={handlePut}>
           Enviar
         </button>
       </form>
     </div>
-  );   
-
+  );
 }

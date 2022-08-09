@@ -798,38 +798,52 @@ color: var(--tinto);
 /* WinerieCrud y AdminPage: */
 
 .winerieCrud {
-  border: 3px solid var(--black);
-  margin: 20px;
+  border: 1px solid var(--viña2);
+  width: 50vw;
+  border-radius: 5px;
+  margin:auto;
+  margin-bottom: 1rem;
   padding-bottom: 1rem;
 }
 
 .winerieCrud h2 {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
-.buttonViña {
+.winerieCrud p {
+  font-size: 0.8rem;
+}
+
+.winerieCrud img {
+  width:100%;
+  height: 80%;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.buttonGreen {
   background-color: rgb(81, 136, 81);
   color: white;
-  border: solid 1px rgb(81, 136, 81);
+  border: solid 0.5px rgb(81, 136, 81);
   border-radius: 5px;
-  width: 500px;
-  font-size: 1.3rem;
-  font-family: "Open Sans", sans-serif;
+  width: 100px;
+  margin-top: 100px;
+  font-size: 1rem;
+  
 }
 
-.buttonViña:hover {
+.buttonGreen:hover {
   background-color: rgb(61, 117, 61);
 }
 
 .crudButtons .buttonViña {
-  background-color:var(--viña);
+  background-color: grey;
   color: white;
-  border: solid 1px rgb(30, 168, 223);
-  margin: 0 5px;
-  width: 100%;
+  
+  margin: 10px 5px;
   border-radius: 5px;
-  font-size: 1rem;
-  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  
 }
 
 .buttonViña:hover {
@@ -837,16 +851,16 @@ color: var(--tinto);
 }
 
 .crudButtons .buttonTinto {
-  background-color: var(--tinto);
+  background-color: var(--light-tinto);
   color: white;
-  border: solid 1px;
+  border: solid 1px var(--tinto);
   border-radius: 5px;
-  font-size: 1rem;
-  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  
 }
 
 .buttonTinto:hover {
-  background-color: var(--light-tinto);
+  background-color: rgb(138, 34, 39);
 }
 
 .post h3 {
@@ -886,14 +900,14 @@ color: var(--tinto);
 
 .post button {
   margin-top: 1rem;
-  background-color: var(--viña);
-  border-radius: 5px;
-  color: var(--light-viña);
+  background-color: var(--brown);
+  border: var(--brown);
+  color: var(--bone);
   font-size: 1.2rem;
 }
 
 .post button:hover {
-  background-color: var(--viña2);
+  background-color: var(--dark-brown);
 }
 
 .post .routeTitle {
@@ -911,6 +925,14 @@ color: var(--tinto);
   padding: 5px;
 }
 
+
+.post button {
+  margin-top: 1rem;
+  background-color: var(--viña);
+  border: var(--brown);
+  color: var(--bone);
+  font-size: 1.2rem;
+}
 
 
 /*Media query para desktop*/

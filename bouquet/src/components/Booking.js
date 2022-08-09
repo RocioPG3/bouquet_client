@@ -8,7 +8,7 @@ export default function Bookings() {
     
     const { id } = useParams();
 
-    let URL = "http://localhost/bouquet_server/public/index.php/api/wineries/read/booking/see/${id}";
+    let URL = `http://localhost/bouquet_server/public/index.php/api/wineries/read/booking/see/${id}`;
     
 
 

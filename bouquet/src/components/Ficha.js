@@ -7,12 +7,12 @@ export default function Ficha( { ficha }) {
 
     //console.log(ficha.user);
     function handleClick(e) {
-        navigate("/booking/${ficha.id}")
+        navigate(`/Booking/${ficha.id}`)
     }
   return (
-    <div className='wineries'>
+    <div className='ficha'>
               <h2> {ficha.name} </h2>
-              <img src={ficha.image} alt="imagen de bodega" />
+              <img src={ficha.image} alt="" />
               <h3>{ficha.denomination}</h3>
               <p>{ficha.address}</p>
               <p>{ficha.user?.email}</p>
@@ -27,5 +27,5 @@ export default function Ficha( { ficha }) {
 
 
     </div>
-  )
+  );
 }
