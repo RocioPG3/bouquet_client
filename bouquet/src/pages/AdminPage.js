@@ -8,7 +8,7 @@ export default function AdminPage() {
   
   const navigate = useNavigate();
   function handleClick() {
-    navigate("/newWinerieForm/");
+    navigate("/newWinerieForm");
   }
   const [wineries, setWineries] = useState([]);
   
