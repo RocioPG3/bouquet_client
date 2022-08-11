@@ -44,13 +44,13 @@ export default function NewWinerieForm() {
       <h3>Publicar una nueva bodega</h3>
 
       <form action="#" method="POST">
-        <label htmlFor="denomination">DO</label>
+        <label htmlFor="denomination">Denominación Origen:</label>
         <input
           type="text"
           name="denomination"
           id="denomination"
           required
-          placeholder="Introduzca la denominación de origen"
+          placeholder="Introduzca DO"
         />
         <label htmlFor="name">Nombre bodega:</label>
         <input
@@ -58,7 +58,7 @@ export default function NewWinerieForm() {
           name="name"
           id="name"
           required
-          placeholder="Introduzca el nombre de la bodega"
+          placeholder="Introduzca nombre bodega"
         />
 
 
@@ -68,7 +68,7 @@ export default function NewWinerieForm() {
           name="location"
           id="location"
           required
-          placeholder="Introduzca la localidad"
+          placeholder="Introduzca localidad"
         />  
         <label htmlFor="address">Dirección:</label>
         <input
@@ -76,7 +76,7 @@ export default function NewWinerieForm() {
           name="address"
           id="address"
           required
-          placeholder="Introduzca la dirección"
+          placeholder="Introduzca dirección"
         /> 
 
         <label htmlFor="telephone">Teléfono:</label>
@@ -85,7 +85,7 @@ export default function NewWinerieForm() {
           name="telephone"
           id="telephone"
           required
-          placeholder="Introduzca el teléfono"
+          placeholder="Introduzca nº teléfono"
         />
         <label htmlFor="services">Servicios:</label>
         <input
@@ -99,7 +99,7 @@ export default function NewWinerieForm() {
         <textarea
           name="description"
           id="description"
-          placeholder="Introduzca una descripción de la bodega, su historia y tipo de vino por ejemplo."
+          placeholder="Introduzca una descripción de la bodega, su historia y tipo de vino, por ejemplo."
         ></textarea>
         
 

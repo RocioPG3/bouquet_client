@@ -653,6 +653,18 @@ color: var(--tinto);
 
 /*-------------estilos WineriesPage-----------*/
 
+.textFinder {
+  margin-top: 80px;
+  color: var(--viña2);
+  font-weight: bold;
+}
+
+.formFinder input {
+  font-size: 10px;
+}
+
+
+
 .BrowserCardStyle {
   display: flex;
   flex-direction: column;
@@ -669,7 +681,6 @@ color: var(--tinto);
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
   margin-bottom: 40px;
 
 
@@ -731,6 +742,36 @@ color: var(--tinto);
   background-color:var(--viña);
   color: var(--bone);
 } 
+
+
+
+/*------------Estilos Ficha----------*/
+
+/* Página ficha: */
+
+.ficha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  width: 100%;
+  margin: 5px;
+  background-color: var(--card);
+  color: var(--bone);
+  padding: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.ficha h2{
+  color: var(--viña2)
+}
+
+.ficha img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}  
 
 /*----------Estilos BookingPage----------*/
 
@@ -798,33 +839,38 @@ color: var(--tinto);
 /* WinerieCrud y AdminPage: */
 
 .winerieCrud {
-  border: 1px solid var(--viña2);
-  width: 50vw;
-  border-radius: 5px;
-  margin:auto;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
+  height: 18rem;
+  width: 13rem;
+  background-color: whitesmoke;
+  border-radius: 1.5rem;
+  box-shadow: 0 0.20rem 0.20rem 0 gray;
+  transition: 0.2s ease-in;
+  padding: 1rem;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 20px;
 }
 
 .winerieCrud h2 {
-  font-size: 1rem;
+  font-size: 0.8rem;
+  color: var(--viña2);
 }
 
 .winerieCrud p {
-  font-size: 0.8rem;
+  font-size: 0.5rem;
 }
 
 .winerieCrud img {
   width:100%;
-  height: 80%;
+  height: 50%;
   border-radius: 10px;
-  margin: auto;
+  /* margin: auto; */
 }
 
 .buttonGreen {
-  background-color: rgb(81, 136, 81);
-  color: white;
-  border: solid 0.5px rgb(81, 136, 81);
+  background-color: var(--viña2);
+  color: var(--bone);
+  border: solid 0.5px var(--viña2);
   border-radius: 5px;
   width: 100px;
   margin-top: 100px;
@@ -833,16 +879,23 @@ color: var(--tinto);
 }
 
 .buttonGreen:hover {
-  background-color: rgb(61, 117, 61);
+  background-color: var(--viña);
+}
+
+.crudButtons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
 .crudButtons .buttonViña {
   background-color: grey;
   color: white;
-  
-  margin: 10px 5px;
+  width: 50%;
   border-radius: 5px;
-  font-size: 0.8rem;
+  border: solid 1px grey;
+  font-size: 0.6rem;
   
 }
 
@@ -853,9 +906,11 @@ color: var(--tinto);
 .crudButtons .buttonTinto {
   background-color: var(--light-tinto);
   color: white;
+  width: 50%;
   border: solid 1px var(--tinto);
   border-radius: 5px;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
+  margin-top: 5px;
   
 }
 
@@ -864,10 +919,25 @@ color: var(--tinto);
 }
 
 .post h3 {
-  font-size: 1.4rem;
+  font-size: 1rem;
+  margin-top: 100px;
   text-decoration: underline;
   font-weight: bold;
-  color: var(--dark-brown);
+  color: var(--viña2);
+}
+
+.post label {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--viña2);
+}
+
+.post input {
+  font-size: 10px;
+}
+
+.post textarea{
+  font-size: 10px;
 }
 
 .post form {
@@ -876,43 +946,48 @@ color: var(--tinto);
   align-items: center;
   justify-self: center;
   width: fit-content;
-  margin: auto;
-  background-color: var(--makeup);
+  margin: 20px;
+  background-color: var(--light-viña);
   color: var(--black);
   padding: 10px;
   border-radius: 10px;
-  padding: 10px;
+  padding: 50px;
 }
 
 .post form input {
-  width: 80vw;
-  height: 2rem;
+  width: 100%;
+  height: 20%;
   margin-block: 1rem;
   border-radius: 5px;
+  border: solid 1px var(--viña2);
+  
 }
 
 .post form textarea {
-  width: 80vw;
-  height: 6rem;
+  width: 100%;
+  height: 60px;
   margin-block: 1rem;
   border-radius: 5px;
+  border: solid 1px var(--viña2);
 }
 
 .post button {
   margin-top: 1rem;
+  margin-bottom: 1rem;
   background-color: var(--brown);
-  border: var(--brown);
+  border-radius: 5% ;
   color: var(--bone);
   font-size: 1.2rem;
 }
 
 .post button:hover {
-  background-color: var(--dark-brown);
+  background-color: var(--viña2);
+  
 }
 
 .post .routeTitle {
   border: 1px solid black;
-  font-size: larger;
+  font-size: small;
   border-radius: 5px;
   padding: 5px;
   background-color: white;
@@ -928,10 +1003,14 @@ color: var(--tinto);
 
 .post button {
   margin-top: 1rem;
-  background-color: var(--viña);
+  background-color: var(--viña2);
   border: var(--brown);
   color: var(--bone);
-  font-size: 1.2rem;
+  font-size: 1rem;
+}
+
+.post button:hover{
+  background-color: var(--viña);
 }
 
 

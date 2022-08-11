@@ -28,11 +28,10 @@ const URL ="http://localhost/bouquet_server/public/index.php/api/wineries/read";
   return (
     <div>
     <div>
-    <h1 className="wineriesTitle">TODAS NUESTRAS RUTAS</h1>
     </div>
     <div>
       <form className="formFinder">
-        <p className="textFinder">Buscador de bodegas:</p>
+        <p className="textFinder">Busca tu bodega:</p>
         <input 
         type="text"
         placeholder="Introduce la Denominación de Origen"
