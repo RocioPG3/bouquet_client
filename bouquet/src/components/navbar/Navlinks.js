@@ -14,7 +14,7 @@ export default function Navlinks(props) {
           className="navlink"
           activeclassname="active" onClick={()=> props.isMobile && props.closeMobileMenu()}
         >
-          D.O
+          D.O.
         </NavLink>
         <NavLink to="/Wineries" className="navlink" activeclassname="active" onClick={()=> props.isMobile && props.closeMobileMenu()}>
           Nuestras bodegas

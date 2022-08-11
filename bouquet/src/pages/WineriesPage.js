@@ -34,7 +34,7 @@ const URL ="http://localhost/bouquet_server/public/index.php/api/wineries/read";
         <p className="textFinder">Busca tu bodega:</p>
         <input 
         type="text"
-        placeholder="Introduce la Denominación de Origen"
+        placeholder="Introduce la D.O."
         className="inputFinder"
         name="inputFinder"
         autoComplete="off"

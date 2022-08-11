@@ -23,16 +23,22 @@ export default function Bookings() {
         <h3>Reserva tu bodega</h3>
 
         <form action="#" method="POST">
-          <label htmlFor="contactRoute">Bodega para visitar:</label>
-          <p>{routeDetails.name}</p>
+          <label htmlFor="contactWinerie">Bodega para visitar:</label>
+          <input
+            type="text"
+            name="contactWinerie"
+            id="contactWinerie"
+            required
+            placeholder="Nombre Bodega"
+          />
   
           <label htmlFor="contactDate">Fecha de interés:</label>
-          <select name="availability" id="">
-          {routeDetails.wineriesAvailabilities?.map((datetime) => {
-            return <option value="datetime.id">{datetime.datetime}</option>;
-          })}
-        </select>
-
+          <input
+            type="date"
+            name="contactDate"
+            id="contactDate"
+          />
+          
           <label htmlFor="contactName">Nombre:</label>
           <input
             type="text"
@@ -64,7 +70,7 @@ export default function Bookings() {
           <textarea
             name="contactMessage"
             id="contactMessage"
-            placeholder="Si desea hacer alguna aclaración o comentario, por favor indíquelo aquí. En cuanto recibamos su solicitud y comprobemos la disponibilidad para la ruta y fechas seleccionadas, nos pondremos en contacto con usted."
+            placeholder="Si desea hacer alguna aclaración o comentario, por favor indíquelo aquí. Próximamente nos pondremos en contacto con usted."
           ></textarea>
   
           <button className="button" type="submit">

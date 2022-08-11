@@ -54,8 +54,6 @@ div .navlinks{
   position:absolute;
   top: 40px;
   right:-200%;
-  
-  /* width: 100%; */
   background-color: var(--light-tinto);
   opacity:var(--tinto) ;
   border-top: 2px solid var(--viña);
@@ -369,6 +367,13 @@ color: var(--tinto);
 
 } 
 
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
 .loginform button,
 .newaccount button {
   width: 80px;
@@ -379,11 +384,8 @@ color: var(--tinto);
   background-color: var(--viña);
   color: var(--bone);
   cursor: pointer;
-  
-} 
-
- .newaccount button {
-  margin-left: -10px;
+  margin-top: 5px;
+    
 } 
 
 .loginform button:hover{
@@ -459,7 +461,8 @@ color: var(--tinto);
   background-color: var(--light-viña);
   width: 100%;
   height: 25rem; 
-  margin:20px;
+  margin:auto;
+  margin-top: 10px;
   border-radius: 5px;
     
 }
@@ -632,22 +635,23 @@ color: var(--tinto);
 
  .heading button{
  
-  width: 90px;
+  width: 80px;
   height: 40px;
   border: solid 1px grey;
   border-radius: 5px;
-  font-size: 0.5rem;
-  background-color: var(--viña);
-  color: var(--bone);
+  font-size: 0.8rem;
+  background-color: var(--light-viña);
+  color: var(--viña);
   cursor: pointer;
-  margin-bottom: 30px; 
-  margin-top: 20px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+
  }
 
  .heading button:hover{
-  background-color: var(--light-viña);
-  color: var(--viña);
-  font-size:0.9rem;
+  background-color: var(--viña2);
+  color: var(--light-viña);
+
 } 
 
 
@@ -682,6 +686,7 @@ color: var(--tinto);
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
+  padding-top: -1rem;
 
 
 }
@@ -757,14 +762,19 @@ color: var(--tinto);
   width: 100%;
   margin: 5px;
   background-color: var(--card);
-  color: var(--bone);
+  color: var(--viña2);
   padding: 10px;
   border-radius: 10px;
   padding: 10px;
 }
 
 .ficha h2{
-  color: var(--viña2)
+  margin-top: 30px;
+  color: var(--tinto)
+}
+
+.ficha p {
+  font-size: 10px;
 }
 
 .ficha img {
@@ -772,6 +782,26 @@ color: var(--tinto);
   height: 80%;
   border-radius: 10px;
 }  
+
+.ficha button {
+  width: 80px;
+  height: 25px;
+  border: solid 1px grey;
+  border-radius: 5px;
+  font-size: 0.5rem;
+  background-color: var(--viña);
+  color: var(--bone);
+  cursor: pointer;
+  margin-top: 15px;
+
+  margin-bottom: 15px;
+}
+
+.ficha button:hover {
+  background-color: var(--light-viña);
+  color: var(--viña);
+
+}
 
 /*----------Estilos BookingPage----------*/
 
@@ -781,6 +811,11 @@ color: var(--tinto);
   flex-direction: column;
   
 } */
+
+.bookings h3 {
+  margin-top: 100px;
+  color: var(--tinto);
+}
 .bookings form {
   display: flex;
   flex-direction: column;
@@ -788,6 +823,7 @@ color: var(--tinto);
   justify-self: center;
   width: fit-content;
   margin: auto;
+  margin-bottom: 20px;
   background-color: var(--light-viña);
   color: var(--black);
   padding: 10px;
@@ -819,20 +855,21 @@ color: var(--tinto);
 }
 
 .bookings button {
- 
-  height: 40px;
   width: 80px;
+  height: 25px;
   border: solid 1px grey;
   border-radius: 5px;
-  font-size: 0.6rem;
-  background-color: var(--light-viña);
-  color: var(--viña2);
+  font-size: 0.5rem;
+  background-color: var(--viña2);
+  color: var(--bone);
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px; 
 }
 
 .bookings button:hover {
-  background-color: var(--viña);
+  background-color: var(--light-viña);
+  color: var(--viña);
 }
 
 
@@ -1079,13 +1116,14 @@ a.navlink:hover{
 
 
 .texthome{
+  /* margin-top: 10px;
   margin-bottom: 50px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
 }
 .texthome h1 {
   color: var(--tinto);
-  margin-top: 50px;
+  margin-top: 5px;
   font-size:x-large;
   }
   
@@ -1686,6 +1724,59 @@ a.navlink:hover{
     background-color:var(--viña);
     color: var(--bone);
   } 
+
+
+  /*---------- Página ficha------------ */
+
+.ficha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  width: 70%;
+  margin: 5px;
+  background-color: var(--card);
+  color: var(--viña2);
+  padding: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.ficha h2{
+  margin-top: 30px;
+  color: var(--tinto)
+}
+
+.ficha p {
+  font-size: 10px;
+  width: 50%;
+}
+
+.ficha img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}  
+
+.ficha button {
+  width: 80px;
+  height: 40px;
+  border: solid 1px grey;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  background-color: var(--viña2);
+  color: var(--bone);
+  cursor: pointer;
+  margin-top: 15px;
+
+  margin-bottom: 15px;
+}
+
+.ficha button:hover {
+  background-color: var(--light-viña);
+  color: var(--viña);
+
+}
   
   /*----------Estilos BookingPage----------*/
   
@@ -1695,6 +1786,10 @@ a.navlink:hover{
     flex-direction: column;
     
   } */
+  .bookings h3 {
+    margin-top: 100px;
+    color: var(--tinto);
+  }
   .bookings form {
     display: flex;
     flex-direction: column;
@@ -1702,6 +1797,7 @@ a.navlink:hover{
     justify-self: center;
     width: fit-content;
     margin: auto;
+    margin-bottom: 20px;
     background-color: var(--light-viña);
     color: var(--black);
     padding: 10px;
@@ -1733,22 +1829,22 @@ a.navlink:hover{
   }
   
   .bookings button {
-   
-    height: 40px;
     width: 80px;
+    height: 25px;
     border: solid 1px grey;
     border-radius: 5px;
-    font-size: 0.6rem;
-    background-color: var(--light-viña);
-    color: var(--viña2);
+    font-size: 0.5rem;
+    background-color: var(--viña2);
+    color: var(--bone);
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px; 
   }
   
   .bookings button:hover {
-    background-color: var(--viña);
+    background-color: var(--light-viña);
+    color: var(--viña);
   }
-
 
 
 

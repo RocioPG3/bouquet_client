@@ -48,7 +48,7 @@ export default function Login() {
               required
             />
           </div>
-          <div>
+          <div className="buttons">
             <button onClick={handleAuth}>Iniciar sesión</button>
             <button onClick={handleRegister}>Crear una cuenta</button>
             </div>
