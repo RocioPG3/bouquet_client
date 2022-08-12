@@ -24,9 +24,9 @@ export default function Register() {
   
   
   return (
-    <div className="registercomponent">
+    <div className="registro">
         <h3>Nuevo usuario</h3>
-      <form action="#" className="registerform" method="POST">
+      <form action="#" className="formularioRegistro" method="POST">
         <label htmlFor="newEmail">Email:</label>{" "}
         <input type="email" name="newEmail" id="newEmail" required />
         <label htmlFor="newPassword">Contraseña:</label>

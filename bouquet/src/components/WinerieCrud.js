@@ -33,7 +33,7 @@ export default function WinerieCrud({ wineries }) {
     <div>
       <div className="winerieCrud">
         <h2>{wineries.denomination}</h2>
-        <h2>{wineries.name}</h2>
+        <h3>{wineries.name}</h3>
         <p>{wineries.location}</p>
         <p>{wineries.address}</p>
         <p>{wineries.telephone}</p>
